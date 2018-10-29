@@ -1,0 +1,7 @@
+platform :ios ,'8.0'
+target 'YCSummary' do
+ use_frameworks!
+ pod 'CYLTabBarController'
+ pod 'AFNetworking'
+ 
+end
