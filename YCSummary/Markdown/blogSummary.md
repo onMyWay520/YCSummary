@@ -1,6 +1,6 @@
-推荐一些我个人认为非常经典，值得关注的博客。
+推荐一些我个人认为非常经典，值得关注的博客。<br>
 1.OneV's Den<br>
-https://onevcat.com/#blog<br>
+https://onevcat.com/#blog <br>
 大家尊称为喵神 @onevcat 的博客。对 Swift 技术在国内的推广做了很大的贡献。<br>
 
 2.Limboy’s HQ<br>
@@ -11,7 +11,7 @@ https://casatwy.com<br>
 Casa 对架构有很深的理解，《iOS 应用架构谈》系列文章影响深远。<br>
 4.bang’s blog<br>
 http://blog.cnbang.net<br>
-JSPatch 作者 bang 的博客。稳定更新，每篇文章质量都很高。<br>
+JSPatch 作者 bang 的博客。现入职蚂蚁金服，曾是微信读书的项目负责人，稳定更新，每篇文章质量都很高。<br>
 5.Garan no dou | 一只魔法师的工坊<br>
 https://blog.ibireme.com<br>
 YYKit 作者的博客，很多文章如《iOS 保持界面流畅的技巧》《深入理解RunLoop》等都有极高的实用价值。<br>
@@ -46,7 +46,7 @@ https://www.jianshu.com/u/8d5b91490ca5
 
 13.iOS程序犭袁<br>
 https://www.jianshu.com/u/96a14318a4de<br>
-CYLTabBarController 作者，博客也是篇篇经典。<br>
+CYLTabBarController 作者，现入职阿里巴巴，博客也是篇篇经典。<br>
 
 14.sunnyxx<br>
 http://blog.sunnyxx.com<br>
