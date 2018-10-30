@@ -7,9 +7,11 @@
 //
 
 #import "YCHomeVC.h"
-
+#import "VVeboTableView.h"
 @interface YCHomeVC ()
-
+{
+    VVeboTableView *tableView;
+}
 @end
 
 @implementation YCHomeVC
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"首页";
+    tableView = [[VVeboTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    tableView.scrollIndicatorInsets = tableView.contentInset;
+    [self.view addSubview:tableView];
+    
+    UIToolbar *statusBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 20)];
+    [self.view addSubview:statusBar];
 }
 
 /*

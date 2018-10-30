@@ -11,6 +11,7 @@
 #import "YCHomeVC.h"
 #import "YCMineVC.h"
 #import "YCFindVC.h"
+#import "FDFeedViewController.h"
 #import "YCBaseNavigationController.h"
 static CGFloat const CYLTabBarControllerHeight = 40.f;
 
@@ -52,10 +53,10 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
     YCFindVC *secondViewController = [[YCFindVC alloc] init];
     UIViewController *secondNavigationController = [[YCBaseNavigationController alloc]initWithRootViewController:secondViewController];
     
-    YCHomeVC *thirdViewController = [[YCHomeVC alloc] init];
+    FDFeedViewController *thirdViewController = [[FDFeedViewController alloc] init];
     UIViewController *thirdNavigationController = [[YCBaseNavigationController alloc]initWithRootViewController:thirdViewController];
     
-    YCFindVC *forthViewController = [[YCFindVC alloc] init];
+    YCMineVC *forthViewController = [[YCMineVC alloc] init];
     UIViewController *forthNavigationController = [[YCBaseNavigationController alloc]initWithRootViewController:forthViewController];
     CYLTabBarController *tabBarController = [[CYLTabBarController alloc] init];
     NSArray *viewControllers =@[

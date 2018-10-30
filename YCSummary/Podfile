@@ -3,5 +3,7 @@ target 'YCSummary' do
  use_frameworks!
  pod 'CYLTabBarController'
  pod 'AFNetworking'
- 
+# pod 'SDWebImage'
+pod 'Masonry'
+pod 'UITableView+FDTemplateLayoutCell'
 end
