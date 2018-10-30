@@ -6,4 +6,5 @@ target 'YCSummary' do
 # pod 'SDWebImage'
 pod 'Masonry'
 pod 'UITableView+FDTemplateLayoutCell'
+pod 'YYKit'
 end
