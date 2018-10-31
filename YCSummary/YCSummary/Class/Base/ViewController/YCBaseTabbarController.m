@@ -13,6 +13,7 @@
 #import "YCFindVC.h"
 #import "FDFeedViewController.h"
 #import "YCBaseNavigationController.h"
+#import "WBStatusTimelineViewController.h"
 static CGFloat const CYLTabBarControllerHeight = 40.f;
 
 @interface YCBaseTabbarController ()<UITabBarControllerDelegate>
@@ -50,7 +51,7 @@ static CGFloat const CYLTabBarControllerHeight = 40.f;
     YCHomeVC *firstViewController = [[YCHomeVC alloc] init];
     UIViewController *firstNavigationController = [[YCBaseNavigationController alloc]initWithRootViewController:firstViewController];
     
-    YCFindVC *secondViewController = [[YCFindVC alloc] init];
+    WBStatusTimelineViewController *secondViewController = [[WBStatusTimelineViewController alloc] init];
     UIViewController *secondNavigationController = [[YCBaseNavigationController alloc]initWithRootViewController:secondViewController];
     
     FDFeedViewController *thirdViewController = [[FDFeedViewController alloc] init];
