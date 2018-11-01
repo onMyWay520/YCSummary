@@ -38,21 +38,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"微博";
-    if ([self respondsToSelector:@selector( setAutomaticallyAdjustsScrollViewInsets:)]) {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
-    
+//    if ([self respondsToSelector:@selector( setAutomaticallyAdjustsScrollViewInsets:)]) {
+//        self.automaticallyAdjustsScrollViewInsets = NO;
+//    }
+    self.view.frame=CGRectMake(0, 0,  kScreenWidth, kScreenHeight);
+
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[WBStatusHelper imageNamed:@"toolbar_compose_highlighted"] style:UIBarButtonItemStylePlain target:self action:@selector(sendStatus)];
     rightItem.tintColor = UIColorHex(fd8224);
     self.navigationItem.rightBarButtonItem = rightItem;
     
     _tableView.frame = self.view.bounds;
-    _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+//    _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     _tableView.scrollIndicatorInsets = _tableView.contentInset;
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.backgroundView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:_tableView];
-    self.view.backgroundColor = kWBCellBackgroundColor;
+//    self.view.backgroundColor = kWBCellBackgroundColor;
     
     _fpsLabel = [YYFPSLabel new];
     [_fpsLabel sizeToFit];
@@ -60,14 +61,6 @@
     _fpsLabel.left = kWBCellPadding;
     _fpsLabel.alpha = 0;
     [self.view addSubview:_fpsLabel];
-    
-    if (kSystemVersion < 7) {
-        _fpsLabel.top -= 44;
-        _tableView.top -= 64;
-        _tableView.height += 20;
-    }
-    
-    
     self.navigationController.view.userInteractionEnabled = NO;
     UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     indicator.size = CGSizeMake(80, 80);
@@ -78,7 +71,7 @@
     [indicator startAnimating];
     [self.view addSubview:indicator];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         for (int i = 0; i <= 7; i++) {
             NSData *data = [NSData dataNamed:[NSString stringWithFormat:@"weibo_%d.json",i]];
             WBTimelineItem *item = [WBTimelineItem modelWithJSON:data];
@@ -88,7 +81,7 @@
                 [_layouts addObject:layout];
             }
         }
-        
+    
         // 复制一下，让列表长一些，不至于滑两下就到底了
         [self.layouts addObjectsFromArray:self->_layouts];
         
@@ -97,7 +90,7 @@
         self.navigationController.view.userInteractionEnabled = YES;
             [self.tableView reloadData];
         });
-    });
+//    });
 }
 
 - (void)sendStatus {

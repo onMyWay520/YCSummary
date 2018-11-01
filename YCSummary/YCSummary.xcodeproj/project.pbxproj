@@ -180,17 +180,9 @@
 		56DEDCC021898CCE00BDFA48 /* WebP.sh in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCBF21898CCE00BDFA48 /* WebP.sh */; };
 		56DEDCC22189958900BDFA48 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DEDCC12189958900BDFA48 /* Security.framework */; };
 		56DEDCC4218995AE00BDFA48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DEDCC3218995AE00BDFA48 /* Foundation.framework */; };
-		56DEDCDB21899D7200BDFA48 /* ermilio_q15.bpg in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD021899D7200BDFA48 /* ermilio_q15.bpg */; };
-		56DEDCDC21899D7200BDFA48 /* ermilio_q90.webp in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD121899D7200BDFA48 /* ermilio_q90.webp */; };
-		56DEDCDD21899D7200BDFA48 /* google@2x.webp in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD221899D7200BDFA48 /* google@2x.webp */; };
-		56DEDCDE21899D7200BDFA48 /* ermilio_lossless.bpg in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD321899D7200BDFA48 /* ermilio_lossless.bpg */; };
-		56DEDCDF21899D7200BDFA48 /* ermilio_q20.bpg in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD421899D7200BDFA48 /* ermilio_q20.bpg */; };
-		56DEDCE021899D7200BDFA48 /* ermilio_lossless.webp in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD521899D7200BDFA48 /* ermilio_lossless.webp */; };
 		56DEDCE121899D7200BDFA48 /* ResourceWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */; };
 		56DEDCE221899D7200BDFA48 /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */; };
-		56DEDCE321899D7200BDFA48 /* ermilio_q85.webp in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD821899D7200BDFA48 /* ermilio_q85.webp */; };
-		56DEDCE421899D7200BDFA48 /* wall-e@2x.webp in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD921899D7200BDFA48 /* wall-e@2x.webp */; };
-		56DEDCE521899D7200BDFA48 /* nyancat@2x.webp in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCDA21899D7200BDFA48 /* nyancat@2x.webp */; };
+		843A0F08218A070700BCFA9F /* YYBPGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 843A0F06218A070700BCFA9F /* YYBPGCoder.m */; };
 		BD875F2361A5D5346585B6F5 /* Pods_YCSummary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA7DB6E35657A553438CC /* Pods_YCSummary.framework */; };
 /* End PBXBuildFile section */
 
@@ -530,17 +522,10 @@
 		56DEDCBF21898CCE00BDFA48 /* WebP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = WebP.sh; sourceTree = "<group>"; };
 		56DEDCC12189958900BDFA48 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		56DEDCC3218995AE00BDFA48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		56DEDCD021899D7200BDFA48 /* ermilio_q15.bpg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q15.bpg; sourceTree = "<group>"; };
-		56DEDCD121899D7200BDFA48 /* ermilio_q90.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q90.webp; sourceTree = "<group>"; };
-		56DEDCD221899D7200BDFA48 /* google@2x.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "google@2x.webp"; sourceTree = "<group>"; };
-		56DEDCD321899D7200BDFA48 /* ermilio_lossless.bpg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_lossless.bpg; sourceTree = "<group>"; };
-		56DEDCD421899D7200BDFA48 /* ermilio_q20.bpg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q20.bpg; sourceTree = "<group>"; };
-		56DEDCD521899D7200BDFA48 /* ermilio_lossless.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_lossless.webp; sourceTree = "<group>"; };
 		56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceWeibo.bundle; sourceTree = "<group>"; };
 		56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
-		56DEDCD821899D7200BDFA48 /* ermilio_q85.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ermilio_q85.webp; sourceTree = "<group>"; };
-		56DEDCD921899D7200BDFA48 /* wall-e@2x.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wall-e@2x.webp"; sourceTree = "<group>"; };
-		56DEDCDA21899D7200BDFA48 /* nyancat@2x.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nyancat@2x.webp"; sourceTree = "<group>"; };
+		843A0F06218A070700BCFA9F /* YYBPGCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBPGCoder.m; sourceTree = "<group>"; };
+		843A0F07218A070700BCFA9F /* YYBPGCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBPGCoder.h; sourceTree = "<group>"; };
 		C26E5E336DF917403AB68AC5 /* Pods-YCSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSummary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCSummary/Pods-YCSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		CC35DA5965D2590B84C160A2 /* Pods-YCSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-YCSummary/Pods-YCSummary.release.xcconfig"; sourceTree = "<group>"; };
 		CD5CA7DB6E35657A553438CC /* Pods_YCSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1093,8 +1078,8 @@
 			isa = PBXGroup;
 			children = (
 				56DEDCBF21898CCE00BDFA48 /* WebP.sh */,
-				56DEDCBD21898CC500BDFA48 /* bpg.framework */,
 				56DEDCBB2189883000BDFA48 /* WebP.framework */,
+				56DEDCBD21898CC500BDFA48 /* bpg.framework */,
 				56DEDBBA2189874800BDFA48 /* Cache */,
 				56DEDBC32189874800BDFA48 /* Image */,
 				56DEDBDF2189874800BDFA48 /* Model */,
@@ -1109,13 +1094,13 @@
 		56DEDBBA2189874800BDFA48 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				56DEDBBB2189874800BDFA48 /* YYDiskCache.m */,
-				56DEDBBC2189874800BDFA48 /* YYKVStorage.h */,
-				56DEDBBD2189874800BDFA48 /* YYCache.m */,
-				56DEDBBE2189874800BDFA48 /* YYMemoryCache.h */,
 				56DEDBBF2189874800BDFA48 /* YYDiskCache.h */,
+				56DEDBBB2189874800BDFA48 /* YYDiskCache.m */,
 				56DEDBC02189874800BDFA48 /* YYCache.h */,
+				56DEDBBD2189874800BDFA48 /* YYCache.m */,
+				56DEDBBC2189874800BDFA48 /* YYKVStorage.h */,
 				56DEDBC12189874800BDFA48 /* YYKVStorage.m */,
+				56DEDBBE2189874800BDFA48 /* YYMemoryCache.h */,
 				56DEDBC22189874800BDFA48 /* YYMemoryCache.m */,
 			);
 			path = Cache;
@@ -1128,9 +1113,14 @@
 				56DEDBC42189874800BDFA48 /* YYImageCache.m */,
 				56DEDBC82189874800BDFA48 /* YYFrameImage.h */,
 				56DEDBD02189874800BDFA48 /* YYFrameImage.m */,
+				56DEDBDE2189874800BDFA48 /* YYSpriteSheetImage.h */,
 				56DEDBC92189874800BDFA48 /* YYSpriteSheetImage.m */,
 				56DEDBCA2189874800BDFA48 /* YYWebImageOperation.h */,
+				56DEDBDD2189874800BDFA48 /* YYWebImageOperation.m */,
+				843A0F07218A070700BCFA9F /* YYBPGCoder.h */,
+				843A0F06218A070700BCFA9F /* YYBPGCoder.m */,
 				56DEDBCB2189874800BDFA48 /* YYAnimatedImageView.h */,
+				56DEDBDC2189874800BDFA48 /* YYAnimatedImageView.m */,
 				56DEDBC52189874800BDFA48 /* YYImage.h */,
 				56DEDBCC2189874800BDFA48 /* YYImage.m */,
 				56DEDBCD2189874800BDFA48 /* YYImageCache.h */,
@@ -1138,9 +1128,6 @@
 				56DEDBCF2189874800BDFA48 /* YYWebImageManager.h */,
 				56DEDBC62189874800BDFA48 /* YYWebImageManager.m */,
 				56DEDBD12189874800BDFA48 /* Categories */,
-				56DEDBDC2189874800BDFA48 /* YYAnimatedImageView.m */,
-				56DEDBDD2189874800BDFA48 /* YYWebImageOperation.m */,
-				56DEDBDE2189874800BDFA48 /* YYSpriteSheetImage.h */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -1148,16 +1135,16 @@
 		56DEDBD12189874800BDFA48 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				56DEDBD22189874800BDFA48 /* _YYWebImageSetter.m */,
 				56DEDBD32189874800BDFA48 /* UIButton+YYWebImage.h */,
-				56DEDBD42189874800BDFA48 /* UIImageView+YYWebImage.h */,
-				56DEDBD52189874800BDFA48 /* CALayer+YYWebImage.h */,
-				56DEDBD62189874800BDFA48 /* MKAnnotationView+YYWebImage.h */,
-				56DEDBD72189874800BDFA48 /* _YYWebImageSetter.h */,
 				56DEDBD82189874800BDFA48 /* UIButton+YYWebImage.m */,
-				56DEDBD92189874800BDFA48 /* UIImageView+YYWebImage.m */,
-				56DEDBDA2189874800BDFA48 /* MKAnnotationView+YYWebImage.m */,
+				56DEDBD52189874800BDFA48 /* CALayer+YYWebImage.h */,
 				56DEDBDB2189874800BDFA48 /* CALayer+YYWebImage.m */,
+				56DEDBD72189874800BDFA48 /* _YYWebImageSetter.h */,
+				56DEDBD22189874800BDFA48 /* _YYWebImageSetter.m */,
+				56DEDBD42189874800BDFA48 /* UIImageView+YYWebImage.h */,
+				56DEDBD92189874800BDFA48 /* UIImageView+YYWebImage.m */,
+				56DEDBD62189874800BDFA48 /* MKAnnotationView+YYWebImage.h */,
+				56DEDBDA2189874800BDFA48 /* MKAnnotationView+YYWebImage.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1176,11 +1163,7 @@
 		56DEDBE52189874800BDFA48 /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				56DEDBE62189874800BDFA48 /* YYTextView.m */,
 				56DEDBE72189874800BDFA48 /* Component */,
-				56DEDBFA2189874900BDFA48 /* YYLabel.m */,
-				56DEDC0F2189874900BDFA48 /* YYLabel.h */,
-				56DEDBFB2189874900BDFA48 /* YYTextView.h */,
 				56DEDBFC2189874900BDFA48 /* String */,
 			);
 			path = Text;
@@ -1204,6 +1187,10 @@
 				56DEDBF42189874800BDFA48 /* YYTextSelectionView.m */,
 				56DEDBF52189874900BDFA48 /* YYTextEffectWindow.h */,
 				56DEDBF62189874900BDFA48 /* YYTextContainerView.h */,
+				56DEDBFB2189874900BDFA48 /* YYTextView.h */,
+				56DEDBE62189874800BDFA48 /* YYTextView.m */,
+				56DEDC0F2189874900BDFA48 /* YYLabel.h */,
+				56DEDBFA2189874900BDFA48 /* YYLabel.m */,
 				56DEDBF72189874900BDFA48 /* YYTextKeyboardManager.m */,
 				56DEDBF82189874900BDFA48 /* YYTextInput.h */,
 				56DEDBF92189874900BDFA48 /* YYTextDebugOption.m */,
@@ -1217,8 +1204,9 @@
 				56DEDBFD2189874900BDFA48 /* YYTextAttribute.h */,
 				56DEDBFE2189874900BDFA48 /* YYTextRunDelegate.m */,
 				56DEDBFF2189874900BDFA48 /* YYTextUtilities.m */,
+				56DEDC0B2189874900BDFA48 /* NSParagraphStyle+YYText.h */,
 				56DEDC002189874900BDFA48 /* NSParagraphStyle+YYText.m */,
-				56DEDC012189874900BDFA48 /* YYTextParser.m */,
+				56DEDC092189874900BDFA48 /* NSAttributedString+YYText.h */,
 				56DEDC022189874900BDFA48 /* NSAttributedString+YYText.m */,
 				56DEDC032189874900BDFA48 /* UIPasteboard+YYText.m */,
 				56DEDC042189874900BDFA48 /* YYTextRubyAnnotation.h */,
@@ -1226,9 +1214,8 @@
 				56DEDC062189874900BDFA48 /* YYTextUtilities.h */,
 				56DEDC072189874900BDFA48 /* YYTextRunDelegate.h */,
 				56DEDC082189874900BDFA48 /* YYTextAttribute.m */,
-				56DEDC092189874900BDFA48 /* NSAttributedString+YYText.h */,
 				56DEDC0A2189874900BDFA48 /* YYTextParser.h */,
-				56DEDC0B2189874900BDFA48 /* NSParagraphStyle+YYText.h */,
+				56DEDC012189874900BDFA48 /* YYTextParser.m */,
 				56DEDC0C2189874900BDFA48 /* YYTextArchiver.m */,
 				56DEDC0D2189874900BDFA48 /* YYTextRubyAnnotation.m */,
 				56DEDC0E2189874900BDFA48 /* UIPasteboard+YYText.h */,
@@ -1260,8 +1247,10 @@
 				56DEDC1A2189874900BDFA48 /* UIImage+YYAdd.h */,
 				56DEDC1B2189874900BDFA48 /* UIScrollView+YYAdd.m */,
 				56DEDC1C2189874900BDFA48 /* UIScreen+YYAdd.m */,
+				56DEDC2E2189874900BDFA48 /* UIView+YYAdd.h */,
 				56DEDC1D2189874900BDFA48 /* UIView+YYAdd.m */,
 				56DEDC1E2189874900BDFA48 /* UIFont+YYAdd.h */,
+				56DEDC2D2189874900BDFA48 /* UIFont+YYAdd.m */,
 				56DEDC1F2189874900BDFA48 /* UIBarButtonItem+YYAdd.m */,
 				56DEDC202189874900BDFA48 /* UIGestureRecognizer+YYAdd.m */,
 				56DEDC212189874900BDFA48 /* UITextField+YYAdd.h */,
@@ -1276,8 +1265,6 @@
 				56DEDC2A2189874900BDFA48 /* UIControl+YYAdd.m */,
 				56DEDC2B2189874900BDFA48 /* UIGestureRecognizer+YYAdd.h */,
 				56DEDC2C2189874900BDFA48 /* UIBarButtonItem+YYAdd.h */,
-				56DEDC2D2189874900BDFA48 /* UIFont+YYAdd.m */,
-				56DEDC2E2189874900BDFA48 /* UIView+YYAdd.h */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1295,6 +1282,7 @@
 				56DEDC372189874900BDFA48 /* NSObject+YYAdd.m */,
 				56DEDC382189874900BDFA48 /* NSString+YYAdd.h */,
 				56DEDC392189874900BDFA48 /* NSObject+YYAddForKVO.h */,
+				56DEDC462189874900BDFA48 /* NSNotificationCenter+YYAdd.m */,
 				56DEDC3A2189874900BDFA48 /* NSData+YYAdd.m */,
 				56DEDC3B2189874900BDFA48 /* NSThread+YYAdd.m */,
 				56DEDC3C2189874900BDFA48 /* NSDictionary+YYAdd.h */,
@@ -1307,7 +1295,6 @@
 				56DEDC432189874900BDFA48 /* NSObject+YYAdd.h */,
 				56DEDC442189874900BDFA48 /* NSString+YYAdd.m */,
 				56DEDC452189874900BDFA48 /* NSBundle+YYAdd.h */,
-				56DEDC462189874900BDFA48 /* NSNotificationCenter+YYAdd.m */,
 				56DEDC472189874900BDFA48 /* NSKeyedUnarchiver+YYAdd.h */,
 				56DEDC482189874900BDFA48 /* NSDictionary+YYAdd.m */,
 				56DEDC492189874900BDFA48 /* NSThread+YYAdd.h */,
@@ -1341,6 +1328,7 @@
 				56DEDC592189874900BDFA48 /* YYGestureRecognizer.h */,
 				56DEDC5A2189874900BDFA48 /* YYSentinel.m */,
 				56DEDC5B2189874900BDFA48 /* YYReachability.h */,
+				56DEDC682189874900BDFA48 /* YYReachability.m */,
 				56DEDC5C2189874900BDFA48 /* YYThreadSafeArray.h */,
 				56DEDC5D2189874900BDFA48 /* YYTimer.h */,
 				56DEDC5E2189874900BDFA48 /* YYAsyncLayer.h */,
@@ -1353,7 +1341,6 @@
 				56DEDC652189874900BDFA48 /* YYFileHash.m */,
 				56DEDC662189874900BDFA48 /* YYTimer.m */,
 				56DEDC672189874900BDFA48 /* YYThreadSafeArray.m */,
-				56DEDC682189874900BDFA48 /* YYReachability.m */,
 				56DEDC692189874900BDFA48 /* YYSentinel.h */,
 			);
 			path = Utility;
@@ -1370,17 +1357,8 @@
 		56DEDCCF21899D7200BDFA48 /* weibo */ = {
 			isa = PBXGroup;
 			children = (
-				56DEDCD021899D7200BDFA48 /* ermilio_q15.bpg */,
-				56DEDCD121899D7200BDFA48 /* ermilio_q90.webp */,
-				56DEDCD221899D7200BDFA48 /* google@2x.webp */,
-				56DEDCD321899D7200BDFA48 /* ermilio_lossless.bpg */,
-				56DEDCD421899D7200BDFA48 /* ermilio_q20.bpg */,
-				56DEDCD521899D7200BDFA48 /* ermilio_lossless.webp */,
 				56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */,
 				56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */,
-				56DEDCD821899D7200BDFA48 /* ermilio_q85.webp */,
-				56DEDCD921899D7200BDFA48 /* wall-e@2x.webp */,
-				56DEDCDA21899D7200BDFA48 /* nyancat@2x.webp */,
 			);
 			path = weibo;
 			sourceTree = "<group>";
@@ -1485,6 +1463,7 @@
 		56133EA42186984E00419FE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YC;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "YC科技有限公司";
 				TargetAttributes = {
@@ -1532,26 +1511,17 @@
 				5614369121883F33002B3594 /* FDFeedCell.xib in Resources */,
 				56DEDB8F218945A400BDFA48 /* weibo_1.json in Resources */,
 				56DEDB8A218945A400BDFA48 /* weibo_2.json in Resources */,
-				56DEDCDC21899D7200BDFA48 /* ermilio_q90.webp in Resources */,
-				56DEDCE521899D7200BDFA48 /* nyancat@2x.webp in Resources */,
 				56DEDB8D218945A400BDFA48 /* weibo_7.json in Resources */,
 				56DEDB89218945A400BDFA48 /* weibo_3.json in Resources */,
-				56DEDCDF21899D7200BDFA48 /* ermilio_q20.bpg in Resources */,
-				56DEDCE321899D7200BDFA48 /* ermilio_q85.webp in Resources */,
 				56DEDB90218945A400BDFA48 /* weibo_0.json in Resources */,
-				56DEDCDE21899D7200BDFA48 /* ermilio_lossless.bpg in Resources */,
 				56DEDB8C218945A400BDFA48 /* weibo_4.json in Resources */,
 				56DEDB8E218945A400BDFA48 /* weibo_6.json in Resources */,
-				56DEDCE021899D7200BDFA48 /* ermilio_lossless.webp in Resources */,
 				56133EB92186985100419FE5 /* Assets.xcassets in Resources */,
 				5614368921883D34002B3594 /* data.plist in Resources */,
 				56DEDCE221899D7200BDFA48 /* EmoticonWeibo.bundle in Resources */,
-				56DEDCDB21899D7200BDFA48 /* ermilio_q15.bpg in Resources */,
 				56DEDCE121899D7200BDFA48 /* ResourceWeibo.bundle in Resources */,
 				56DEDB8B218945A400BDFA48 /* weibo_5.json in Resources */,
-				56DEDCE421899D7200BDFA48 /* wall-e@2x.webp in Resources */,
 				56133EB72186984E00419FE5 /* Main.storyboard in Resources */,
-				56DEDCDD21899D7200BDFA48 /* google@2x.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1691,6 +1661,7 @@
 				56DEDC8E2189874900BDFA48 /* YYTextAttribute.m in Sources */,
 				5614368621883D34002B3594 /* VVeboLabel.m in Sources */,
 				56DEDC772189874900BDFA48 /* MKAnnotationView+YYWebImage.m in Sources */,
+				843A0F08218A070700BCFA9F /* YYBPGCoder.m in Sources */,
 				56DEDC972189874900BDFA48 /* UIScrollView+YYAdd.m in Sources */,
 				56DEDC7E2189874900BDFA48 /* YYTextMagnifier.m in Sources */,
 				56DEDC962189874900BDFA48 /* UITableView+YYAdd.m in Sources */,
@@ -1926,10 +1897,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C26E5E336DF917403AB68AC5 /* Pods-YCSummary.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L72U93A2D9;
-				ENABLE_BITCODE = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YCSummary/Class/Tool/thirdFactory/YYKit",
@@ -1941,6 +1913,18 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CYLTabBarController\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"UITableView_FDTemplateLayoutCell\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yongchao.com.YCSummary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1952,10 +1936,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC35DA5965D2590B84C160A2 /* Pods-YCSummary.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L72U93A2D9;
-				ENABLE_BITCODE = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/YCSummary/Class/Tool/thirdFactory/YYKit",
@@ -1967,6 +1952,18 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"CYLTabBarController\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"UITableView_FDTemplateLayoutCell\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yongchao.com.YCSummary;
 				PRODUCT_NAME = "$(TARGET_NAME)";

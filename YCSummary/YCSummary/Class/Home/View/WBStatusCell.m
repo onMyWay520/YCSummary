@@ -752,20 +752,20 @@
     
     /// 圆角头像
     [_profileView.avatarView setImageWithURL:layout.status.user.avatarLarge //profileImageURL
-    placeholder:nil
-    options:kNilOptions
-    manager:[WBStatusHelper avatarImageManager] ///< 圆角头像manager，内置圆角处理
-    progress:nil
-    transform:nil
-    completion:nil];
-
+                                 placeholder:nil
+                                     options:kNilOptions
+                                     manager:[WBStatusHelper avatarImageManager] //< 圆角头像manager，内置圆角处理
+                                    progress:nil
+                                   transform:nil
+                                  completion:nil];
+    
     _profileView.nameLabel.textLayout = layout.nameTextLayout;
     _profileView.sourceLabel.textLayout = layout.sourceTextLayout;
     _profileView.verifyType = layout.status.user.userVerifyType;
     _profileView.height = layout.profileHeight;
     _profileView.top = top;
     top += layout.profileHeight;
-
+    
     NSURL *picBg = [WBStatusHelper defaultURLForImageURL:layout.status.picBg];
     __weak typeof(_vipBackgroundView) vipBackgroundView = _vipBackgroundView;
     [_vipBackgroundView setImageWithURL:picBg placeholder:nil options:YYWebImageOptionAvoidSetImage completion:^(UIImage *image, NSURL *url, YYWebImageFromType from, YYWebImageStage stage, NSError *error) {
@@ -892,29 +892,29 @@
                                  placeholder:nil
                                      options:YYWebImageOptionAvoidSetImage
                                   completion:^(UIImage *image, NSURL *url, YYWebImageFromType from, YYWebImageStage stage, NSError *error) {
-                @strongify(imageView);
-                if (!imageView) return;
-                if (image && stage == YYWebImageStageFinished) {
-                    int width = pic.bmiddle.width;
-                    int height = pic.bmiddle.height;
-                    CGFloat scale = (height / width) / (imageView.height / imageView.width);
-                    if (scale < 0.99 || isnan(scale)) { // 宽图把左右两边裁掉
-                        imageView.contentMode = UIViewContentModeScaleAspectFill;
-                        imageView.layer.contentsRect = CGRectMake(0, 0, 1, 1);
-                    } else { // 高图只保留顶部
-                        imageView.contentMode = UIViewContentModeScaleToFill;
-                        imageView.layer.contentsRect = CGRectMake(0, 0, 1, (float)width / height);
-                    }
-                    ((YYControl *)imageView).image = image;
-                    if (from != YYWebImageFromMemoryCacheFast) {
-                        CATransition *transition = [CATransition animation];
-                        transition.duration = 0.15;
-                        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-                        transition.type = kCATransitionFade;
-                        [imageView.layer addAnimation:transition forKey:@"contents"];
-                    }
-                }
-            }];
+                                      @strongify(imageView);
+                                      if (!imageView) return;
+                                      if (image && stage == YYWebImageStageFinished) {
+                                          int width = pic.bmiddle.width;
+                                          int height = pic.bmiddle.height;
+                                          CGFloat scale = (height / width) / (imageView.height / imageView.width);
+                                          if (scale < 0.99 || isnan(scale)) { // 宽图把左右两边裁掉
+                                              imageView.contentMode = UIViewContentModeScaleAspectFill;
+                                              imageView.layer.contentsRect = CGRectMake(0, 0, 1, 1);
+                                          } else { // 高图只保留顶部
+                                              imageView.contentMode = UIViewContentModeScaleToFill;
+                                              imageView.layer.contentsRect = CGRectMake(0, 0, 1, (float)width / height);
+                                          }
+                                          ((YYControl *)imageView).image = image;
+                                          if (from != YYWebImageFromMemoryCacheFast) {
+                                              CATransition *transition = [CATransition animation];
+                                              transition.duration = 0.15;
+                                              transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+                                              transition.type = kCATransitionFade;
+                                              [imageView.layer addAnimation:transition forKey:@"contents"];
+                                          }
+                                      }
+                                  }];
         }
     }
 }
@@ -991,3 +991,4 @@
 }
 
 @end
+

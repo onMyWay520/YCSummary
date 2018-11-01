@@ -47,9 +47,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    if ([self respondsToSelector:@selector( setAutomaticallyAdjustsScrollViewInsets:)]) {
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+//    if ([self respondsToSelector:@selector( setAutomaticallyAdjustsScrollViewInsets:)]) {
+//        self.automaticallyAdjustsScrollViewInsets = NO;
+//    }
     
     
     [self _initNavBar];
@@ -61,8 +61,7 @@
 
 - (void)_initNavBar {
     UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(_cancel)];
-    [button setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:16],
-                                     NSForegroundColorAttributeName : UIColorHex(4c4c4c)} forState:UIControlStateNormal];
+    [button setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:16],NSForegroundColorAttributeName : UIColorHex(4c4c4c)} forState:UIControlStateNormal];
     self.navigationItem.leftBarButtonItem = button;
     
     switch (_type) {
@@ -81,7 +80,6 @@
 - (void)_initTextView {
     if (_textView) return;
     _textView = [YYTextView new];
-    if (kSystemVersion < 7) _textView.top = -64;
     _textView.size = CGSizeMake(self.view.width, self.view.height);
     _textView.textContainerInset = UIEdgeInsetsMake(12, 16, 12, 16);
     _textView.contentInset = UIEdgeInsetsMake(64, 0, kToolbarHeight, 0);
@@ -275,7 +273,7 @@
         _toolbar.bottom = CGRectGetMinY(toFrame);
     } else {
         [UIView animateWithDuration:transition.animationDuration delay:0 options:transition.animationOption | UIViewAnimationOptionBeginFromCurrentState animations:^{
-            _toolbar.bottom = CGRectGetMinY(toFrame);
+            self->_toolbar.bottom = CGRectGetMinY(toFrame);
         } completion:NULL];
     }
 }
