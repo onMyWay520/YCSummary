@@ -55,6 +55,7 @@
 		5614369121883F33002B3594 /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5614368F21883F33002B3594 /* FDFeedCell.xib */; };
 		5614369321884155002B3594 /* FData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5614369221884155002B3594 /* FData.json */; };
 		56143696218841A1002B3594 /* FDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56143695218841A1002B3594 /* FDFeedViewController.m */; };
+		5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */ = {isa = PBXBuildFile; fileRef = 5654E63521928FED00CEBB46 /* YCArraySort.m */; };
 		56DEDB582189424200BDFA48 /* WBStatusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEDB572189424200BDFA48 /* WBStatusHelper.m */; };
 		56DEDB5F2189425000BDFA48 /* WBStatusComposeTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEDB5A2189425000BDFA48 /* WBStatusComposeTextParser.m */; };
 		56DEDB602189425000BDFA48 /* WBStatusComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEDB5C2189425000BDFA48 /* WBStatusComposeViewController.m */; };
@@ -300,6 +301,8 @@
 		5614369221884155002B3594 /* FData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FData.json; sourceTree = "<group>"; };
 		56143694218841A1002B3594 /* FDFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFeedViewController.h; sourceTree = "<group>"; };
 		56143695218841A1002B3594 /* FDFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFeedViewController.m; sourceTree = "<group>"; };
+		5654E63421928FED00CEBB46 /* YCArraySort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCArraySort.h; sourceTree = "<group>"; };
+		5654E63521928FED00CEBB46 /* YCArraySort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCArraySort.m; sourceTree = "<group>"; };
 		56DEDB562189424200BDFA48 /* WBStatusHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusHelper.h; sourceTree = "<group>"; };
 		56DEDB572189424200BDFA48 /* WBStatusHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusHelper.m; sourceTree = "<group>"; };
 		56DEDB592189425000BDFA48 /* WBStatusComposeTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusComposeTextParser.h; sourceTree = "<group>"; };
@@ -860,6 +863,8 @@
 		56133EF82186A48700419FE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5654E63421928FED00CEBB46 /* YCArraySort.h */,
+				5654E63521928FED00CEBB46 /* YCArraySort.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1661,6 +1666,7 @@
 				56DEDC8E2189874900BDFA48 /* YYTextAttribute.m in Sources */,
 				5614368621883D34002B3594 /* VVeboLabel.m in Sources */,
 				56DEDC772189874900BDFA48 /* MKAnnotationView+YYWebImage.m in Sources */,
+				5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */,
 				843A0F08218A070700BCFA9F /* YYBPGCoder.m in Sources */,
 				56DEDC972189874900BDFA48 /* UIScrollView+YYAdd.m in Sources */,
 				56DEDC7E2189874900BDFA48 /* YYTextMagnifier.m in Sources */,

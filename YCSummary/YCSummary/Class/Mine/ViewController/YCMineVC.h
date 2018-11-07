@@ -6,11 +6,11 @@
 //  Copyright © 2018年 YC科技有限公司. All rights reserved.
 //
 
-#import "YCBaseVC.h"
+#import "FCBaseTableVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YCMineVC : YCBaseVC
+@interface YCMineVC : FCBaseTableVC
 
 @end
 

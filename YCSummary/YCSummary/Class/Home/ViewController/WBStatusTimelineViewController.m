@@ -108,7 +108,7 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     if (_fpsLabel.alpha == 0) {
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-            _fpsLabel.alpha = 1;
+            self->_fpsLabel.alpha = 1;
         } completion:NULL];
     }
 }
@@ -117,7 +117,7 @@
     if (!decelerate) {
         if (_fpsLabel.alpha != 0) {
             [UIView animateWithDuration:1 delay:2 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-                _fpsLabel.alpha = 0;
+                self->_fpsLabel.alpha = 0;
             } completion:NULL];
         }
     }
@@ -126,7 +126,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if (_fpsLabel.alpha != 0) {
         [UIView animateWithDuration:1 delay:2 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-            _fpsLabel.alpha = 0;
+            self->_fpsLabel.alpha = 0;
         } completion:NULL];
     }
 }
@@ -134,7 +134,7 @@
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView {
     if (_fpsLabel.alpha == 0) {
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-            _fpsLabel.alpha = 1;
+            self->_fpsLabel.alpha = 1;
         } completion:^(BOOL finished) {
         }];
     }
