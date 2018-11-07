@@ -5,7 +5,7 @@ https://onevcat.com/#blog <br>
 
 2.Limboy’s HQ<br>
 https://limboy.me/category/tech.html<br>
-李忠关于 RAC 、组件化的文章流传很广。博客中对架构、编程的思考都很精髓。听说现在转管理后不太更新技术文了。<br>
+李忠关于 RAC 、组件化的文章流传很广。博客中对架构、编程的思考都很精髓。听说现在转管理后不太更新技术文章了。<br>
 3.Casa Taloyum<br>
 https://casatwy.com<br>
 Casa 对架构有很深的理解，《iOS 应用架构谈》系列文章影响深远。<br>
@@ -38,7 +38,7 @@ Peak 以一系列 TCP/IP 相关的文章让人折服，之前博客更新频率�
 
 11.Bestswifter<br>
 https://juejin.im/user/57638ad8207703006b06e3ef/posts <br>
-@bestswifter 张星宇的博客，《让 BAT 的 offer 不再难拿》https://github.com/bestswifter/blog/blob/master/articles/bat-offer.md介绍了他在大学时准备面试最后进入百度的经历，这篇文章也引起了不小的积极反响。博客除了如 《深入理解 iOS 开发中的锁》https://github.com/bestswifter/blog/blob/master/articles/ios-lock.md  iOS 开发也有不少工程化话题的文章。<br>
+@bestswifter 张星宇的博客，《让 BAT 的 offer 不再难拿》https://github.com/bestswifter/blog/blob/master/articles/bat-offer.md 介绍了他在大学时准备面试最后进入百度的经历，这篇文章也引起了不小的积极反响。博客除了如 《深入理解 iOS 开发中的锁》https://github.com/bestswifter/blog/blob/master/articles/ios-lock.md  iOS 开发也有不少工程化话题的文章。<br>
 
 12.故胤道长<br>
 https://www.jianshu.com/u/8d5b91490ca5
