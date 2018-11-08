@@ -55,6 +55,9 @@
 		5614369121883F33002B3594 /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5614368F21883F33002B3594 /* FDFeedCell.xib */; };
 		5614369321884155002B3594 /* FData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5614369221884155002B3594 /* FData.json */; };
 		56143696218841A1002B3594 /* FDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56143695218841A1002B3594 /* FDFeedViewController.m */; };
+		564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB621943B8E00F2893E /* YCNounVC.m */; };
+		564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB921943C1500F2893E /* YCDispatchVC.m */; };
+		564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EBC21943EE000F2893E /* YCDispatchModel.m */; };
 		5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */ = {isa = PBXBuildFile; fileRef = 5654E63521928FED00CEBB46 /* YCArraySort.m */; };
 		56DEDB582189424200BDFA48 /* WBStatusHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEDB572189424200BDFA48 /* WBStatusHelper.m */; };
 		56DEDB5F2189425000BDFA48 /* WBStatusComposeTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEDB5A2189425000BDFA48 /* WBStatusComposeTextParser.m */; };
@@ -301,6 +304,12 @@
 		5614369221884155002B3594 /* FData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FData.json; sourceTree = "<group>"; };
 		56143694218841A1002B3594 /* FDFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFeedViewController.h; sourceTree = "<group>"; };
 		56143695218841A1002B3594 /* FDFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFeedViewController.m; sourceTree = "<group>"; };
+		564A2EB521943B8E00F2893E /* YCNounVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCNounVC.h; sourceTree = "<group>"; };
+		564A2EB621943B8E00F2893E /* YCNounVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCNounVC.m; sourceTree = "<group>"; };
+		564A2EB821943C1500F2893E /* YCDispatchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDispatchVC.h; sourceTree = "<group>"; };
+		564A2EB921943C1500F2893E /* YCDispatchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDispatchVC.m; sourceTree = "<group>"; };
+		564A2EBB21943EE000F2893E /* YCDispatchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDispatchModel.h; sourceTree = "<group>"; };
+		564A2EBC21943EE000F2893E /* YCDispatchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDispatchModel.m; sourceTree = "<group>"; };
 		5654E63421928FED00CEBB46 /* YCArraySort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCArraySort.h; sourceTree = "<group>"; };
 		5654E63521928FED00CEBB46 /* YCArraySort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCArraySort.m; sourceTree = "<group>"; };
 		56DEDB562189424200BDFA48 /* WBStatusHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusHelper.h; sourceTree = "<group>"; };
@@ -733,6 +742,8 @@
 		56133EE92186A2BC00419FE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				564A2EBB21943EE000F2893E /* YCDispatchModel.h */,
+				564A2EBC21943EE000F2893E /* YCDispatchModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -749,6 +760,10 @@
 			children = (
 				56133F022186A57500419FE5 /* YCMineVC.h */,
 				56133F032186A57500419FE5 /* YCMineVC.m */,
+				564A2EB521943B8E00F2893E /* YCNounVC.h */,
+				564A2EB621943B8E00F2893E /* YCNounVC.m */,
+				564A2EB821943C1500F2893E /* YCDispatchVC.h */,
+				564A2EB921943C1500F2893E /* YCDispatchVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1605,6 +1620,7 @@
 				56DEDC7C2189874900BDFA48 /* YYClassInfo.m in Sources */,
 				56133F132186E2DA00419FE5 /* YCBaseNavigationController.m in Sources */,
 				56143667218805D0002B3594 /* MKAnnotationView+WebCache.m in Sources */,
+				564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */,
 				56DEDB762189444C00BDFA48 /* YYSimpleWebViewController.m in Sources */,
 				56143673218805D0002B3594 /* UIImageView+WebCache.m in Sources */,
 				56DEDCA32189874900BDFA48 /* NSData+YYAdd.m in Sources */,
@@ -1722,6 +1738,7 @@
 				561436252187EC08002B3594 /* UIView+Additions.m in Sources */,
 				56DEDB732189440400BDFA48 /* YYTableView.m in Sources */,
 				56DEDB612189425000BDFA48 /* WBEmoticonInputView.m in Sources */,
+				564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */,
 				56DEDB7C218944C800BDFA48 /* YYFPSLabel.m in Sources */,
 				5614366D218805D0002B3594 /* UIImage+MultiFormat.m in Sources */,
 				56DEDC892189874900BDFA48 /* YYTextUtilities.m in Sources */,
@@ -1730,6 +1747,7 @@
 				561436272187EC08002B3594 /* UITableView+Additions.m in Sources */,
 				56DEDC922189874900BDFA48 /* UIBezierPath+YYAdd.m in Sources */,
 				561436262187EC08002B3594 /* UIDevice+Additions.m in Sources */,
+				564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */,
 				56DEDCA82189874900BDFA48 /* NSDate+YYAdd.m in Sources */,
 				56133F1E2186E43700419FE5 /* YCPublishVC.m in Sources */,
 				5614367D21883A50002B3594 /* UIColor+ICCategory.m in Sources */,
