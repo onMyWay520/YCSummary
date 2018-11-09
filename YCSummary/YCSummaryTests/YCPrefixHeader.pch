@@ -10,7 +10,7 @@
 #define YCPrefixHeader_pch
 #import "UIColor+ICCategory.h"
 #import "YCMacro.h"
-#import "YYKit.h"
-#import "UIView+YYAdd.h"
+//#import "YYKit.h"
+//#import "UIView+YYAdd.h"
 
 #endif /* YCPrefixHeader_pch */

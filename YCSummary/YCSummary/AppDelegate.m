@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "YCBaseTabbarController.h"
 #import "YCBaseAddTabbarItem.h"
-#import "YYFPSLabel.h"
 #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
 @interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 @property(nonatomic,strong) YCBaseTabbarController*tabBarController;
@@ -26,8 +25,6 @@
     self.tabBarController=[[YCBaseTabbarController alloc]init];
     self.tabBarController.delegate = self;
     [self.window setRootViewController:self.tabBarController];
-    // 刷新率
-    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 70, 0, 0)]];
 //    [self customizeInterfaceWithTabBarController:self.tabBarController];
     return YES;
 }
