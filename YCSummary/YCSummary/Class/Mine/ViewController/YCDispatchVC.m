@@ -20,11 +20,11 @@
     [super viewDidLoad];
     self.title=@"Dispatch函数演练";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0, 64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.frame=CGRectMake(0, SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT-SafeAreaTopHeight);
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"异步执行 + 并行队列",@"异步执行+串行队列",@"同步执行 + 并行队列",@"同步执行 + 串行队列",@"异步执行+主队列",@"线程间的通信",@"栅栏方法",@"快速迭代方法 dispatch_apply",@"dispatch_group_notify",@"dispatch_semaphore_t 信号量相关",@"非线程安全",@"线程安全",@"线程组",@"队列的挂起与恢复"];
+        _dataArray=@[@"异步执行 + 并行队列",@"异步执行+串行队列",@"同步执行 + 并行队列",@"同步执行 + 串行队列",@"异步执行+主队列",@"线程间的通信",@"栅栏方法",@"快速迭代方法 dispatch_apply",@"dispatch_group_notify",@"dispatch_semaphore_t 信号量相关",@"非线程安全",@"线程安全",@"线程组",@"队列的挂起与恢复",@"dispatch_source",@"倒计时"];
     }
     return _dataArray;
 }
@@ -93,7 +93,12 @@
         case 13:
             [model suspendAndresume];
             break;
-
+        case 14:
+            [model dispatch_source];
+            break;
+        case 15:
+            [model dispatch_source_set_timer];
+            break;
         default:
             break;
     }

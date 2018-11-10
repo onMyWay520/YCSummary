@@ -39,6 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)dispatch_group;
 #pragma mark - 队列的挂起与恢复
 -(void)suspendAndresume;
+#pragma mark - dispatch_source实例
+-(void)dispatch_source;
+#pragma mark - 倒计时
+-(void)dispatch_source_set_timer;
 @end
 
 NS_ASSUME_NONNULL_END

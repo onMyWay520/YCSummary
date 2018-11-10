@@ -209,9 +209,7 @@
 -(void)groupNotify{
     NSLog(@"currentThread---%@",[NSThread currentThread]);  // 打印当前线程
     NSLog(@"group---begin");
-    
     dispatch_group_t group =  dispatch_group_create();
-    
     dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 追加任务1
         for (int i = 0; i < 2; ++i) {
@@ -223,8 +221,8 @@
     dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 追加任务2
         for (int i = 0; i < 2; ++i) {
-            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-            NSLog(@"2当前线程---%@",[NSThread currentThread]);      // 打印当前线程
+            [NSThread sleepForTimeInterval:2];    // 模拟耗时操作
+            NSLog(@"2当前线程---%@",[NSThread currentThread]); // 打印当前线程
         }
     });
     
@@ -232,7 +230,7 @@
         // 等前面的异步任务1、任务2都执行完毕后，回到主线程执行下边任务
         for (int i = 0; i < 2; ++i) {
             [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-            NSLog(@"3当前线程---%@",[NSThread currentThread]);      // 打印当前线程
+            NSLog(@"3当前线程---%@",[NSThread currentThread]);   // 打印当前线程
         }
         NSLog(@"group---end");
     });
@@ -455,5 +453,93 @@
      2018-08-31 16:01:20.725547+0800 GCDSummary[6553:240820] block2After 5 seconds again...
      */
     
+}
+#pragma mark - dispatch_source实例
+/*
+ 创建一个source，source的type为ADD的方式，然后将事件触发后要执行的句柄添加到main队列中，在souce创建后默认是挂起的，需要用dispatch——resume函数来恢复监听
+ */
+-(void)dispatch_source{
+    dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_DATA_ADD, 0, 0, dispatch_get_global_queue(0, 0));
+       NSLog(@"0-----");
+    dispatch_source_set_event_handler(source, ^{
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"1-----");
+            //更新UI
+        });
+    });
+    dispatch_resume(source);
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        //网络请求
+        dispatch_source_merge_data(source, 1); //通知队列
+        NSLog(@"2-----");
+
+    });
+    //创建source，以DISPATCH_SOURCE_TYPE_DATA_ADD的方式进行累加，而DISPATCH_SOURCE_TYPE_DATA_OR是对结果进行二进制或运算
+//    dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_DATA_ADD, 0, 0, dispatch_get_main_queue());
+//
+//    //事件触发后执行的句柄
+//    dispatch_source_set_event_handler(source,^{
+//
+//        NSLog(@"监听函数：%lu",dispatch_source_get_data(source));
+//
+//    });
+//    //开启source
+//    dispatch_resume(source);
+//    dispatch_queue_t myqueue =dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//
+//    dispatch_async(myqueue, ^ {
+//
+//        for(int i = 1; i <= 4; i ++){
+//            NSLog(@"~~~~~~~~~~~~~~%d", i);
+//            //触发事件，向source发送事件，这里i不能为0，否则触发不了事件
+//            dispatch_source_merge_data(source,i);
+//            //当Interval的事件越长，则每次的句柄都会触发
+//            //[NSThread sleepForTimeInterval:0.0001];
+//        }
+//    });
+    /*
+     2018-11-09 09:18:09.399743+0800 YCSummary[1757:23905] ~~~~~~~~~~~~~~1
+     2018-11-09 09:18:09.399938+0800 YCSummary[1757:23905] ~~~~~~~~~~~~~~2
+     2018-11-09 09:18:09.400077+0800 YCSummary[1757:23905] ~~~~~~~~~~~~~~3
+     2018-11-09 09:18:09.400191+0800 YCSummary[1757:23905] ~~~~~~~~~~~~~~4
+     2018-11-09 09:18:09.400930+0800 YCSummary[1757:23852] 监听函数：10
+*/
+
+}
+#pragma mark - 倒计时
+/*
+ source 分派源
+ start 数控制计时器第一次触发的时刻。参数类型是 dispatch_time_t，这是一个opaque类型，我们不能直接操作它。我们得需要 dispatch_time 和 dispatch_walltime 函数来创建它们。另外，常量 DISPATCH_TIME_NOW 和 DISPATCH_TIME_FOREVER 通常很有用。
+ interval 间隔时间
+ leeway 计时器触发的精准程度
+ https://www.jianshu.com/p/880c2f9301b6
+*/
+-(void)dispatch_source_set_timer{
+    //倒计时时间
+    __block int timeout = 3;
+    //创建队列
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //创建timer
+    dispatch_source_t _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    //设置1s触发一次，0s的误差
+    dispatch_source_set_timer(_timer,dispatch_walltime(NULL, 0),1.0*NSEC_PER_SEC, 0); //每秒执行
+    //触发的事件
+    dispatch_source_set_event_handler(_timer, ^{
+        if(timeout<=0){ //倒计时结束，关闭
+            //取消dispatch源
+            dispatch_source_cancel(_timer);
+            NSLog(@"计时器销毁了");
+        }
+        else{
+            timeout--;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //更新主界面的操作
+                NSLog(@"倒计时~~~~~~~~~~~~~~~~%d", timeout);
+            });
+        }
+    });
+    //开始执行dispatch源
+    dispatch_resume(_timer);
 }
 @end
