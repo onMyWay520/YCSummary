@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="YCStudent" representedClassName="YCStudent" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YCTeacher" syncable="YES"/>
+        <fetchedProperty name="ageFetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="YCStudent" predicateString="$FETCH_SOURCE.age &lt;=20"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="YCTeacher" representedClassName="YCTeacher" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YCStudent" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="YCStudent" predicateString="age&gt;=20"/>
+    <elements>
+        <element name="YCStudent" positionX="-54" positionY="-9" width="128" height="119"/>
+        <element name="YCTeacher" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>

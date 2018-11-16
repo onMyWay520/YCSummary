@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56123DDD219E74C8009C8176 /* YCCoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56123DDC219E74C8009C8176 /* YCCoreDataModel.m */; };
 		56133EB12186984E00419FE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56133EB02186984E00419FE5 /* AppDelegate.m */; };
 		56133EB72186984E00419FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56133EB52186984E00419FE5 /* Main.storyboard */; };
 		56133EB92186985100419FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56133EB82186985100419FE5 /* Assets.xcassets */; };
@@ -55,6 +56,12 @@
 		5614369121883F33002B3594 /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5614368F21883F33002B3594 /* FDFeedCell.xib */; };
 		5614369321884155002B3594 /* FData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5614369221884155002B3594 /* FData.json */; };
 		56143696218841A1002B3594 /* FDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56143695218841A1002B3594 /* FDFeedViewController.m */; };
+		56325171219AA3710091A84C /* YCSchool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56325168219AA3710091A84C /* YCSchool.xcdatamodeld */; };
+		56325175219AA4A90091A84C /* YCCoreDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56325174219AA4A90091A84C /* YCCoreDataVC.m */; };
+		5632518C219AB6380091A84C /* YCStudent+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632518A219AB6380091A84C /* YCStudent+CoreDataClass.m */; };
+		5632518D219AB6380091A84C /* YCStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5632518B219AB6380091A84C /* YCStudent+CoreDataProperties.m */; };
+		56325192219AB6960091A84C /* YCTeacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 56325190219AB6960091A84C /* YCTeacher+CoreDataClass.m */; };
+		56325193219AB6960091A84C /* YCTeacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 56325191219AB6960091A84C /* YCTeacher+CoreDataProperties.m */; };
 		564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB621943B8E00F2893E /* YCNounVC.m */; };
 		564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB921943C1500F2893E /* YCDispatchVC.m */; };
 		564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EBC21943EE000F2893E /* YCDispatchModel.m */; };
@@ -88,6 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56123DDB219E74C8009C8176 /* YCCoreDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCoreDataModel.h; sourceTree = "<group>"; };
+		56123DDC219E74C8009C8176 /* YCCoreDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCoreDataModel.m; sourceTree = "<group>"; };
 		56133EAC2186984E00419FE5 /* YCSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56133EAF2186984E00419FE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56133EB02186984E00419FE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +193,17 @@
 		5614369221884155002B3594 /* FData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FData.json; sourceTree = "<group>"; };
 		56143694218841A1002B3594 /* FDFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFeedViewController.h; sourceTree = "<group>"; };
 		56143695218841A1002B3594 /* FDFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFeedViewController.m; sourceTree = "<group>"; };
+		56325169219AA3710091A84C /* YCSchool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YCSchool.xcdatamodel; sourceTree = "<group>"; };
+		56325173219AA4A90091A84C /* YCCoreDataVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCoreDataVC.h; sourceTree = "<group>"; };
+		56325174219AA4A90091A84C /* YCCoreDataVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCoreDataVC.m; sourceTree = "<group>"; };
+		56325188219AB6380091A84C /* YCStudent+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		56325189219AB6380091A84C /* YCStudent+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCStudent+CoreDataClass.h"; sourceTree = "<group>"; };
+		5632518A219AB6380091A84C /* YCStudent+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YCStudent+CoreDataClass.m"; sourceTree = "<group>"; };
+		5632518B219AB6380091A84C /* YCStudent+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YCStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		5632518E219AB6960091A84C /* YCTeacher+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCTeacher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		5632518F219AB6960091A84C /* YCTeacher+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCTeacher+CoreDataClass.h"; sourceTree = "<group>"; };
+		56325190219AB6960091A84C /* YCTeacher+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YCTeacher+CoreDataClass.m"; sourceTree = "<group>"; };
+		56325191219AB6960091A84C /* YCTeacher+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YCTeacher+CoreDataProperties.m"; sourceTree = "<group>"; };
 		564A2EB521943B8E00F2893E /* YCNounVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCNounVC.h; sourceTree = "<group>"; };
 		564A2EB621943B8E00F2893E /* YCNounVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCNounVC.m; sourceTree = "<group>"; };
 		564A2EB821943C1500F2893E /* YCDispatchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDispatchVC.h; sourceTree = "<group>"; };
@@ -394,8 +414,11 @@
 		56133EE92186A2BC00419FE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56325163219AA3710091A84C /* school */,
 				564A2EBB21943EE000F2893E /* YCDispatchModel.h */,
 				564A2EBC21943EE000F2893E /* YCDispatchModel.m */,
+				56123DDB219E74C8009C8176 /* YCCoreDataModel.h */,
+				56123DDC219E74C8009C8176 /* YCCoreDataModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -416,6 +439,8 @@
 				564A2EB621943B8E00F2893E /* YCNounVC.m */,
 				564A2EB821943C1500F2893E /* YCDispatchVC.h */,
 				564A2EB921943C1500F2893E /* YCDispatchVC.m */,
+				56325173219AA4A90091A84C /* YCCoreDataVC.h */,
+				56325174219AA4A90091A84C /* YCCoreDataVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -705,6 +730,22 @@
 			path = VVeboTableView;
 			sourceTree = "<group>";
 		};
+		56325163219AA3710091A84C /* school */ = {
+			isa = PBXGroup;
+			children = (
+				5632518E219AB6960091A84C /* YCTeacher+CoreDataProperties.h */,
+				5632518F219AB6960091A84C /* YCTeacher+CoreDataClass.h */,
+				56325190219AB6960091A84C /* YCTeacher+CoreDataClass.m */,
+				56325191219AB6960091A84C /* YCTeacher+CoreDataProperties.m */,
+				56325188219AB6380091A84C /* YCStudent+CoreDataProperties.h */,
+				56325189219AB6380091A84C /* YCStudent+CoreDataClass.h */,
+				5632518A219AB6380091A84C /* YCStudent+CoreDataClass.m */,
+				5632518B219AB6380091A84C /* YCStudent+CoreDataProperties.m */,
+				56325168219AA3710091A84C /* YCSchool.xcdatamodeld */,
+			);
+			path = school;
+			sourceTree = "<group>";
+		};
 		56DEDB552189424200BDFA48 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -845,6 +886,7 @@
 				TargetAttributes = {
 					56133EAB2186984E00419FE5 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					56133EC32186985100419FE5 = {
 						CreatedOnToolsVersion = 10.0;
@@ -963,6 +1005,7 @@
 				5614366C218805D0002B3594 /* UIImage+GIF.m in Sources */,
 				56143668218805D0002B3594 /* SDWebImageManager.m in Sources */,
 				56133F132186E2DA00419FE5 /* YCBaseNavigationController.m in Sources */,
+				56325192219AB6960091A84C /* YCTeacher+CoreDataClass.m in Sources */,
 				56143667218805D0002B3594 /* MKAnnotationView+WebCache.m in Sources */,
 				564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */,
 				56143673218805D0002B3594 /* UIImageView+WebCache.m in Sources */,
@@ -992,12 +1035,18 @@
 				56143675218805D0002B3594 /* UIButton+WebCache.m in Sources */,
 				5614366F218805D0002B3594 /* SDWebImagePrefetcher.m in Sources */,
 				5614366B218805D0002B3594 /* SDWebImageDownloader.m in Sources */,
+				56325171219AA3710091A84C /* YCSchool.xcdatamodeld in Sources */,
 				56143696218841A1002B3594 /* FDFeedViewController.m in Sources */,
 				5614366E218805D0002B3594 /* SDWebImageCompat.m in Sources */,
 				5614368721883D34002B3594 /* VVeboTableView.m in Sources */,
+				5632518C219AB6380091A84C /* YCStudent+CoreDataClass.m in Sources */,
 				56133F042186A57500419FE5 /* YCMineVC.m in Sources */,
 				561436252187EC08002B3594 /* UIView+Additions.m in Sources */,
+				5632518D219AB6380091A84C /* YCStudent+CoreDataProperties.m in Sources */,
 				564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */,
+				56123DDD219E74C8009C8176 /* YCCoreDataModel.m in Sources */,
+				56325193219AB6960091A84C /* YCTeacher+CoreDataProperties.m in Sources */,
+				56325175219AA4A90091A84C /* YCCoreDataVC.m in Sources */,
 				5614366D218805D0002B3594 /* UIImage+MultiFormat.m in Sources */,
 				561436272187EC08002B3594 /* UITableView+Additions.m in Sources */,
 				561436262187EC08002B3594 /* UIDevice+Additions.m in Sources */,
@@ -1176,6 +1225,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
@@ -1206,6 +1256,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yongchao.com.YCSummary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YCSummary/Class/Mine/Model/school/YCSummary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1216,6 +1269,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
@@ -1246,6 +1300,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yongchao.com.YCSummary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YCSummary/Class/Mine/Model/school/YCSummary-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1360,6 +1416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56325168219AA3710091A84C /* YCSchool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56325169219AA3710091A84C /* YCSchool.xcdatamodel */,
+			);
+			currentVersion = 56325169219AA3710091A84C /* YCSchool.xcdatamodel */;
+			path = YCSchool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56133EA42186984E00419FE5 /* Project object */;
 }

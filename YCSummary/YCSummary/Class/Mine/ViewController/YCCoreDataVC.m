@@ -1,30 +1,28 @@
 //
-//  YCMineVC.m
+//  YCCoreDataVC.m
 //  YCSummary
 //
-//  Created by wuyongchao on 2018/10/29.
+//  Created by wuyongchao on 2018/11/13.
 //  Copyright © 2018年 YC科技有限公司. All rights reserved.
 //
 
-#import "YCMineVC.h"
-#import "YCNounVC.h"
-#import "YCDispatchVC.h"
 #import "YCCoreDataVC.h"
-@interface YCMineVC ()
+#import "YCCoreDataModel.h"
+@interface YCCoreDataVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
 
-@implementation YCMineVC
+@implementation YCCoreDataVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"我的";
+    self.title=@"coredata演练";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0, 64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.frame=CGRectMake(0,64, SCREENT_WIDTH, SCREENT_HEIGHT);
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练"];
+        _dataArray=@[@"增",@"删",@"改",@"查"];
     }
     return _dataArray;
 }
@@ -33,33 +31,43 @@
     if (!cell) {
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellIdentifier"];
     }
-    cell.textLabel.text=self.dataArray[indexPath.row];
+    cell.textLabel.text=self.dataArray[indexPath.section];
     return cell;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    
+    return self.dataArray.count;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return  self.dataArray.count;
+    
+    return 1;
 }
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    return nil;
-}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 0.001;
+    return HEIGHT(30);
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row==0) {
-        [self.navigationController pushViewController:[YCNounVC new] animated:false];
-    }
-    else  if (indexPath.row==1) {
-        [self.navigationController pushViewController:[YCNounVC new] animated:false];
-    }
-    else{
-        [self.navigationController pushViewController:[YCCoreDataVC new] animated:false];
-    }
+    
+    YCCoreDataModel *model=[[YCCoreDataModel alloc]init];
+        switch (indexPath.section) {
+            case 0:
+                [model addschool];
+                break;
+            case 1:
+                [model deleteSchool];
+                break;
+            case 2:
+                [model updateSchool];
+                break;
+            case 3:
+                 [model searchSchool];
+                break;
+            default:
+                break;
+        }
     
 }
+
 /*
 #pragma mark - Navigation
 
