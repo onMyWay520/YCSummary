@@ -8,6 +8,7 @@
 
 #import "YCNounVC.h"
 #import "YCArraySort.h"
+#import "YCStackForModel.h"
 @interface YCNounVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) NSMutableArray *orginArray;///< <#注释#>
@@ -20,6 +21,7 @@
     self.title=@"算法演练";
     self.mainView.rowHeight=HEIGHT(40);
     self.mainView.frame=CGRectMake(0,64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    [self showStack];
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
@@ -32,6 +34,19 @@
         _orginArray=[[NSMutableArray alloc] initWithObjects:@7,@2,@1,@4,@6,@8,@9,@34,@21,@23,@12,nil];
     }
     return _orginArray;
+}
+-(void)showStack{
+    YCStackForModel *stack=[[YCStackForModel alloc]init];
+    NSString *str=@"hello";
+    [stack push:str];
+    DebugLog(@"=%@",[[stack popTopElement]class]);
+    [stack push:str];
+    NSString *str2=@"world";
+    [stack push:str2];
+    [stack traversalElementPopStack:^(id  _Nonnull objc) {
+        DebugLog(@"遍历元素 %@",objc);
+    }];
+    DebugLog(@"长度是 %ld",(long)stack.stackLength);
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellIdentifier"];

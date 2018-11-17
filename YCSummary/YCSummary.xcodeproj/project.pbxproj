@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56123DDD219E74C8009C8176 /* YCCoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56123DDC219E74C8009C8176 /* YCCoreDataModel.m */; };
+		56123DE0219EB96C009C8176 /* YCStackForModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56123DDF219EB96C009C8176 /* YCStackForModel.m */; };
 		56133EB12186984E00419FE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56133EB02186984E00419FE5 /* AppDelegate.m */; };
 		56133EB72186984E00419FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56133EB52186984E00419FE5 /* Main.storyboard */; };
 		56133EB92186985100419FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56133EB82186985100419FE5 /* Assets.xcassets */; };
@@ -97,6 +98,8 @@
 /* Begin PBXFileReference section */
 		56123DDB219E74C8009C8176 /* YCCoreDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCoreDataModel.h; sourceTree = "<group>"; };
 		56123DDC219E74C8009C8176 /* YCCoreDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCoreDataModel.m; sourceTree = "<group>"; };
+		56123DDE219EB96C009C8176 /* YCStackForModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCStackForModel.h; sourceTree = "<group>"; };
+		56123DDF219EB96C009C8176 /* YCStackForModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCStackForModel.m; sourceTree = "<group>"; };
 		56133EAC2186984E00419FE5 /* YCSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56133EAF2186984E00419FE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56133EB02186984E00419FE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -419,6 +422,8 @@
 				564A2EBC21943EE000F2893E /* YCDispatchModel.m */,
 				56123DDB219E74C8009C8176 /* YCCoreDataModel.h */,
 				56123DDC219E74C8009C8176 /* YCCoreDataModel.m */,
+				56123DDE219EB96C009C8176 /* YCStackForModel.h */,
+				56123DDF219EB96C009C8176 /* YCStackForModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1044,6 +1049,7 @@
 				561436252187EC08002B3594 /* UIView+Additions.m in Sources */,
 				5632518D219AB6380091A84C /* YCStudent+CoreDataProperties.m in Sources */,
 				564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */,
+				56123DE0219EB96C009C8176 /* YCStackForModel.m in Sources */,
 				56123DDD219E74C8009C8176 /* YCCoreDataModel.m in Sources */,
 				56325193219AB6960091A84C /* YCTeacher+CoreDataProperties.m in Sources */,
 				56325175219AA4A90091A84C /* YCCoreDataVC.m in Sources */,
