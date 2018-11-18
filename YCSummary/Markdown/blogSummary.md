@@ -67,6 +67,11 @@ https://juejin.im/user/5656f11760b28da566412f03/posts<br>
 18.J_Knight_<br>
 https://juejin.im/user/57f8ffda2e958a005581e3c0/posts<br>
 入职爱奇艺，J_Knight的文章总是清晰易懂，更新的也很勤快。<br>
+19.老谭笔记 http://www.tanhao.me/archives/<br>
+--------------------
+以下是团队开发博客
+1.微信读书http://wereadteam.github.io/archives/<br>
+2.美团https://tech.meituan.com
 
 --------------------- 
 持续更新，敬请期待！！欢迎star<br>

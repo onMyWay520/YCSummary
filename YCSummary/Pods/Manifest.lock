@@ -16,12 +16,14 @@ PODS:
     - AFNetworking/NSURLSession
   - CYLTabBarController (1.17.17)
   - Masonry (1.1.0)
+  - SJStaticTableView (1.2.0)
   - "UITableView+FDTemplateLayoutCell (1.6)"
 
 DEPENDENCIES:
   - AFNetworking
   - CYLTabBarController
   - Masonry
+  - SJStaticTableView
   - "UITableView+FDTemplateLayoutCell"
 
 SPEC REPOS:
@@ -29,14 +31,16 @@ SPEC REPOS:
     - AFNetworking
     - CYLTabBarController
     - Masonry
+    - SJStaticTableView
     - "UITableView+FDTemplateLayoutCell"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CYLTabBarController: ed3184222048f6e7a57f9b175934580ff6e8d6fb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SJStaticTableView: b04329ab8bf5823463468a06650bf00090008fed
   "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 8988ceb1eef77e8ad6e39189ec43c70dd6dc43d4
+PODFILE CHECKSUM: 3f10b25be536f9b0f4c240ac30da89e43e1b1124
 
 COCOAPODS: 1.5.3

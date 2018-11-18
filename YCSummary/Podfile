@@ -4,7 +4,8 @@ target 'YCSummary' do
  pod 'CYLTabBarController'
  pod 'AFNetworking'
 # pod 'SDWebImage'
-pod 'Masonry'
-pod 'UITableView+FDTemplateLayoutCell'
+ pod 'Masonry'
+ pod 'UITableView+FDTemplateLayoutCell'
 #pod 'YYKit','~>1.0.9'
+ pod 'SJStaticTableView'
 end

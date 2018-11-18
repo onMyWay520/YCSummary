@@ -7,10 +7,10 @@
 //
 
 #import "YCBaseVC.h"
-
+#import "SJStaticTableViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YCFindVC : YCBaseVC
+@interface YCFindVC : SJStaticTableViewController
 
 @end
 

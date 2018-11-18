@@ -1,0 +1,6 @@
+framework module SJStaticTableView {
+  umbrella header "SJStaticTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
