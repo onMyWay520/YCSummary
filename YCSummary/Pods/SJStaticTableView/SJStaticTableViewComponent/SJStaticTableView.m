@@ -16,9 +16,9 @@
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     self = [super initWithFrame:frame style:style];
     if (self) {
-//        self.autoresizingMask =  UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//        self.showsVerticalScrollIndicator = NO;
-//        self.showsHorizontalScrollIndicator = NO;
+        self.autoresizingMask =  UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        self.showsVerticalScrollIndicator = NO;
+        self.showsHorizontalScrollIndicator = NO;
         self.backgroundColor = SJColorWithRGB(240, 239, 245, 1);
         self.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
         self.delegate = self;

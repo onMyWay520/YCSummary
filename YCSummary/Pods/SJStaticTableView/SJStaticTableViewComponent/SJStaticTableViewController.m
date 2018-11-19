@@ -79,7 +79,7 @@
     
     if (!self.tableView) {
          self.tableView = [[SJStaticTableView alloc] initWithFrame:CGRectMake(0, 0, SJScreenWidth, SJScreenHeight)  style:UITableViewStyleGrouped];
-//         self.tableView.contentInset = UIEdgeInsetsMake(44,0,0,0);
+         self.tableView.contentInset = UIEdgeInsetsMake(44,0,0,0);
          self.tableView.sjDelegate = self;
          self.tableView.sjDataSource = self.dataSource;
         [self.view addSubview:self.tableView];

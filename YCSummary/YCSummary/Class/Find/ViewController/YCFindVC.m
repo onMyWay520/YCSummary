@@ -7,7 +7,8 @@
 //
 
 #import "YCFindVC.h"
-
+#import "YCHomeVC.h"
+#import "MHMomentViewController.h"
 @interface YCFindVC ()
 
 @end
@@ -17,7 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"发现";
-    
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
     [self networkRequest];
 
 }
@@ -35,6 +43,7 @@
         
         //获取cell对应的viewModel
         SJStaticTableviewCellViewModel *viewModel = [self.dataSource tableView:self.tableView cellViewModelAtIndexPath:indexPath];
+        
         if (viewModel) {
             //更新viewModel
             viewModel.leftTitle = responseDict[@"title_info"];
@@ -62,7 +71,43 @@
     }];
 
 }
-
+- (void)didSelectViewModel:(SJStaticTableviewCellViewModel *)viewModel atIndexPath:(NSIndexPath *)indexPath{
+    
+    switch (viewModel.identifier){
+            
+        case 0:
+        {
+            MHMomentViewController *vc=[[MHMomentViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 8:
+        {
+            NSLog(@"清理缓存");
+        }
+            break;
+            
+        case 9:
+        {
+            NSLog(@"跳转到定制性cell展示页面 - 分组");
+//            SJCustomCellsViewController *vc = [[SJCustomCellsViewController alloc] init];
+//            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case 10:
+        {
+            NSLog(@"跳转到定制性cell展示页面 - 同组");
+//            SJCustomCellsOneSectionViewController *vc = [[SJCustomCellsOneSectionViewController alloc] init];
+//            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
 
 /*
 #pragma mark - Navigation

@@ -38,6 +38,8 @@
 #define LightGreyColor [UIColor colorWithHexString:@"666666"]
 #define mainTitleColor [UIColor colorWithHexString:@"333333"]
 #define goodsSelloutColor [UIColor colorWithHexString:@"CCCCCC"]
+/// 整个应用的视图的背景色 BackgroundColor
+#define MH_MAIN_BACKGROUNDCOLOR [UIColor colorWithHexString:@"EFEFF4"]
 #define BLODFONT(f) [UIFont boldSystemFontOfSize:[UIScreen mainScreen].bounds.size.width/375*f]
 
 #define WHITECOLOR [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]
@@ -129,6 +131,11 @@ UIView* defLine = [[UIView alloc]initWithFrame:CGRectMake(0, y,SCREENT_WIDTH , 1
 defLine.backgroundColor =[UIColor colorWithHexString:@"E7E7E7"] ;\
 [view addSubview:defLine];\
 
-
+///// 朋友圈
+// 是否为空对象
+#define MHObjectIsNil(__object)  ((nil == __object) || [__object isKindOfClass:[NSNull class]])
+// 设置图片
+#define MHImageNamed(__imageName) [UIImage imageNamed:__imageName]
+#define MHSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #endif /* YCMacro_h */

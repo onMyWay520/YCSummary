@@ -1,4 +1,5 @@
 platform :ios ,'8.0'
+inhibit_all_warnings!
 target 'YCSummary' do
  use_frameworks!
  pod 'CYLTabBarController'
@@ -8,4 +9,33 @@ target 'YCSummary' do
  pod 'UITableView+FDTemplateLayoutCell'
 #pod 'YYKit','~>1.0.9'
  pod 'SJStaticTableView'
+ # 消息链
+ # pod 'ReactiveCocoa'                     ,'2.5'
+ # 适配Xcode9.0 iOS 11
+ pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+ # YYKit 的一套分类
+ pod 'YYCategories'                      , '1.0.4'
+ # 富文本
+ pod 'YYText'                            , '1.0.7'
+ # 字典转模型
+ pod 'YYModel'                           , '1.0.4'
+ # YYImage
+ pod 'YYImage'                           , '1.0.4'
+ # webP
+ pod 'YYImage/WebP'
+ # 高性能的 iOS 缓存框架
+ pod 'YYCache'                           , '1.0.4'
+ # 高性能的 iOS 异步图像加载框架。
+ pod 'YYWebImage'          , '1.0.5'
+ # iOS 键盘监听管理工具
+ pod 'YYKeyboardManager'     , '1.0.1'
+ # iOS 全局并发队列管理工具
+ pod 'YYDispatchQueuePool'  , '1.0'
+ # iOS 异步绘制与显示的工具
+ pod 'YYAsyncLayer'   , '1.0'
+ # 字典转模型 该项目使用YYModel
+ pod 'MJExtension'                       , '3.0.13'
+ pod 'MJRefresh'                         , '3.1.12'
+ # 加密
+ pod 'CocoaSecurity'                     , '1.2.4'
 end
