@@ -10,6 +10,7 @@
 #import "YCNounVC.h"
 #import "YCDispatchVC.h"
 #import "YCCoreDataVC.h"
+#import "YCRunTimeVC.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -24,7 +25,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练"];
+        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练",@"runtime演练"];
     }
     return _dataArray;
 }
@@ -55,8 +56,11 @@
     else  if (indexPath.row==1) {
         [self.navigationController pushViewController:[YCNounVC new] animated:false];
     }
-    else{
+    else  if (indexPath.row==2) {
         [self.navigationController pushViewController:[YCCoreDataVC new] animated:false];
+    }
+    else{
+        [self.navigationController pushViewController:[YCRunTimeVC new] animated:false];
     }
     
 }
