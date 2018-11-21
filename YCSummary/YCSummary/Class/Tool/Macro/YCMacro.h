@@ -130,12 +130,45 @@
 UIView* defLine = [[UIView alloc]initWithFrame:CGRectMake(0, y,SCREENT_WIDTH , 1)];\
 defLine.backgroundColor =[UIColor colorWithHexString:@"E7E7E7"] ;\
 [view addSubview:defLine];\
+/// 适配iPhone X + iOS 11
+#define  MHAdjustsScrollViewInsets_Never(__scrollView)\
+do {\
+_Pragma("clang diagnostic push")\
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")\
+if ([__scrollView respondsToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
+NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
+NSInteger argument = 2;\
+invocation.target = __scrollView;\
+invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
+[invocation setArgument:&argument atIndex:2];\
+[invocation retainArguments];\
+[invocation invoke];\
+}\
+_Pragma("clang diagnostic pop")\
+} while (0)
+/// 导航条高度
+#define MH_APPLICATION_TOP_BAR_HEIGHT (MH_IS_IPHONE_X?88.0f:64.0f)
+/// tabBar高度
+#define MH_APPLICATION_TAB_BAR_HEIGHT (MH_IS_IPHONE_X?83.0f:49.0f)
+/// 工具条高度 (常见的高度)
+#define MH_APPLICATION_TOOL_BAR_HEIGHT_44  44.0f
+#define MH_APPLICATION_TOOL_BAR_HEIGHT_49  49.0f
+/// 状态栏高度
+#define MH_APPLICATION_STATUS_BAR_HEIGHT (MH_IS_IPHONE_X?44:20.0f)
 
 ///// 朋友圈
 // 是否为空对象
 #define MHObjectIsNil(__object)  ((nil == __object) || [__object isKindOfClass:[NSNull class]])
 // 设置图片
 #define MHImageNamed(__imageName) [UIImage imageNamed:__imageName]
+/// AppDelegate
 #define MHSharedAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+// 字符串不为空
+#define MHStringIsNotEmpty(__string)  (!MHStringIsEmpty(__string))
 
+// 数组为空
+#define MHArrayIsEmpty(__array) ((MHObjectIsNil(__array)) || (__array.count==0))
+//  通知中心
+#define MHNotificationCenter [NSNotificationCenter defaultCenter]
 #endif /* YCMacro_h */

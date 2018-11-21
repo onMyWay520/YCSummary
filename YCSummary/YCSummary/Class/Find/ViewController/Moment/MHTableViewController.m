@@ -31,7 +31,7 @@
 
 /// init
 - (instancetype)initWithViewModel:(MHTableViewModel *)viewModel {
-    self = [super initWithViewModel:viewModel];
+//    self = [super initWithViewModel:viewModel];
     if (self) {
         if ([viewModel shouldRequestRemoteDataOnViewDidLoad]) {
             @weakify(self)
@@ -57,7 +57,7 @@
 /// override
 - (void)bindViewModel
 {
-    [super bindViewModel];
+//    [super bindViewModel];
     
     /// observe viewModel's dataSource
     @weakify(self)
@@ -222,7 +222,7 @@
 
 #pragma mark - sub class can override it
 - (UIEdgeInsets)contentInset{
-    return UIEdgeInsetsMake(MH_APPLICATION_TOP_BAR_HEIGHT, 0, 0, 0);
+    return UIEdgeInsetsMake(SafeAreaTopHeight, 0, 0, 0);
 }
 
 /// reload tableView data

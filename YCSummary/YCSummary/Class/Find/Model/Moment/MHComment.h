@@ -7,7 +7,7 @@
 /// 一条评论
 
 #import "MHObject.h"
-
+#import "MHUser.h"
 @interface MHComment : MHObject
 /// 正文
 @property (nonatomic, readwrite, copy) NSString *text;

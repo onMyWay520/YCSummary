@@ -7,7 +7,7 @@
 //  
 
 #import "MHMomentHelper.h"
-#import "MHMomentOperationMoreView.h"
+//#import "MHMomentOperationMoreView.h"
 #import "NSDate+Extension.h"
 @implementation MHMomentHelper
 + (NSDateFormatter *)dateFormatter{
@@ -74,7 +74,7 @@
 
 + (void)hideAllPopViewWithAnimated:(BOOL)animated{
     /// 关掉更多View
-    [MHMomentOperationMoreView hideAllOperationMoreViewWithAnimated:animated];
+//    [MHMomentOperationMoreView hideAllOperationMoreViewWithAnimated:animated];
     /// 关闭键盘
 //    if(MHSharedAppDelegate.isShowKeyboard){ [[UIApplication sharedApplication].keyWindow endEditing:YES]; }
 }

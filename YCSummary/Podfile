@@ -38,4 +38,6 @@ target 'YCSummary' do
  pod 'MJRefresh'                         , '3.1.12'
  # 加密
  pod 'CocoaSecurity'                     , '1.2.4'
+ # 状态栏通知
+ pod 'JDStatusBarNotification'           , '1.5.5'
 end

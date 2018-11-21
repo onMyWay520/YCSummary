@@ -43,7 +43,6 @@ FOUNDATION_EXTERN NSString * const MHPlugSwitchValueDidChangedNotification;
 
 
 
-
 /// 全局分割线高度 .5
 FOUNDATION_EXTERN CGFloat const MHGlobalBottomLineHeight;
 
@@ -110,11 +109,11 @@ static inline UIImage *MHPicturePlaceholder()
 
 
 /// 全局细下滑线颜色 以及分割线颜色
-#define WXGlobalBottomLineColor     [UIColor colorWithHexString:@"D9D8D9"]
+#define WXGlobalBottomLineColor     [UIColor colorForHex:@"D9D8D9"]
 /// 全局黑色字体
-#define WXGlobalBlackTextColor      [UIColor colorWithHexString:@"000000"]
+#define WXGlobalBlackTextColor      [UIColor colorForHex:@"000000"]
 /// 全局灰色背景
-#define WXGlobalGrayBackgroundColor [UIColor colorWithHexString:@"EFEFF4"]
+#define WXGlobalGrayBackgroundColor [UIColor colorForHex:@"EFEFF4"]
 /// 全局分割线高度
 FOUNDATION_EXTERN CGFloat const WXGlobalBottomLineHeight;
 
@@ -202,18 +201,18 @@ FOUNDATION_EXTERN NSUInteger const MHMomentPhotosMaxCount ;
 
 
 /// 微信昵称字体颜色
-#define MHMomentScreenNameTextColor [UIColor colorFromHexString:@"#5B6A92"]
+#define MHMomentScreenNameTextColor [UIColor colorForHex:@"#5B6A92"]
 /// 微信正文（链接、电话）的颜色
-#define MHMomentContentUrlTextColor [UIColor colorFromHexString:@"#4380D1"]
+#define MHMomentContentUrlTextColor [UIColor colorForHex:@"#4380D1"]
 /// 微信正文字体颜色
 #define MHMomentContentTextColor WXGlobalBlackTextColor
 /// 微信时间颜色
-#define MHMomentCreatedAtTextColor [UIColor colorFromHexString:@"#737373"]
+#define MHMomentCreatedAtTextColor [UIColor colorForHex:@"#737373"]
 
 
 
 /// 点击文字高亮的颜色
-#define MHMomentTextHighlightBackgroundColor [UIColor colorFromHexString:@"#C7C7C7"]
+#define MHMomentTextHighlightBackgroundColor [UIColor colorForHex:@"#C7C7C7"]
 
 
 

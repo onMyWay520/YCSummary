@@ -6,10 +6,10 @@
 //  Copyright © 2017年 CoderMikeHe. All rights reserved.
 //  所有需要显示tableView的自定义的视图控制器的基类
 
-#import "MHViewController.h"
+#import "YCBaseVC.h"
 #import "MHTableViewModel.h"
 #import "MHTableView.h"
-@interface MHTableViewController : MHViewController<UITableViewDelegate , UITableViewDataSource>
+@interface MHTableViewController : YCBaseVC<UITableViewDelegate , UITableViewDataSource>
 
 /// The table view for tableView controller.
 /// tableView

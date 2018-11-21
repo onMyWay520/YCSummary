@@ -8,7 +8,6 @@
 
 #import "YCFindVC.h"
 #import "YCHomeVC.h"
-#import "MHMomentViewController.h"
 @interface YCFindVC ()
 
 @end
@@ -77,8 +76,8 @@
             
         case 0:
         {
-            MHMomentViewController *vc=[[MHMomentViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+//            MHMomentViewController *vc=[[MHMomentViewController alloc]init];
+//            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             

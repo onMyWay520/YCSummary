@@ -9,7 +9,7 @@
 #import "MHObject.h"
 #import "MHReflection.h"
 #import "MHEXTRuntimeExtensions.h"
-#import "NSError+MHModelException.h"
+//#import "NSError+MHModelException.h"
 // Used to cache the reflection performed in +propertyKeys.
 static void *MHObjectCachedPropertyKeysKey = &MHObjectCachedPropertyKeysKey;
 

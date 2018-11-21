@@ -11,7 +11,7 @@
 #import "MHComment.h"
 #import "MHPicture.h"
 #import "MHMomentShareInfo.h"
-#import "MHMomentVideo.h"
+//#import "MHMomentVideo.h"
 @interface MHMoment : MHObject
 /// 微信朋友圈类型 （0 配图  1 video 2 share）
 typedef NS_ENUM(NSUInteger, MHMomentExtendType) {
@@ -55,5 +55,5 @@ typedef NS_ENUM(NSUInteger, MHMomentExtendType) {
 /// 分享内容
 @property (nonatomic, readwrite, strong) MHMomentShareInfo *shareInfo;
 /// 视频内容
-@property (nonatomic, readwrite, strong) MHMomentVideo *videoInfo;
+//@property (nonatomic, readwrite, strong) MHMomentVideo *videoInfo;
 @end
