@@ -79,6 +79,8 @@
 		564618F721A534310066A33B /* YCNewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564618F621A534310066A33B /* YCNewModel.m */; };
 		564618FA21A534680066A33B /* NSObject+hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 564618F921A534680066A33B /* NSObject+hook.m */; };
 		564618FD21A535B00066A33B /* YCRunTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564618FC21A535B00066A33B /* YCRunTimeModel.m */; };
+		5646190021A54A5C0066A33B /* YCRunloopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564618FF21A54A5C0066A33B /* YCRunloopVC.m */; };
+		5646190321A54A8C0066A33B /* YCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 5646190221A54A8C0066A33B /* YCThread.m */; };
 		564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB621943B8E00F2893E /* YCNounVC.m */; };
 		564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB921943C1500F2893E /* YCDispatchVC.m */; };
 		564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EBC21943EE000F2893E /* YCDispatchModel.m */; };
@@ -289,6 +291,10 @@
 		564618F921A534680066A33B /* NSObject+hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+hook.m"; sourceTree = "<group>"; };
 		564618FB21A535B00066A33B /* YCRunTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCRunTimeModel.h; sourceTree = "<group>"; };
 		564618FC21A535B00066A33B /* YCRunTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCRunTimeModel.m; sourceTree = "<group>"; };
+		564618FE21A54A5C0066A33B /* YCRunloopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCRunloopVC.h; sourceTree = "<group>"; };
+		564618FF21A54A5C0066A33B /* YCRunloopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCRunloopVC.m; sourceTree = "<group>"; };
+		5646190121A54A8C0066A33B /* YCThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCThread.h; sourceTree = "<group>"; };
+		5646190221A54A8C0066A33B /* YCThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCThread.m; sourceTree = "<group>"; };
 		564A2EB521943B8E00F2893E /* YCNounVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCNounVC.h; sourceTree = "<group>"; };
 		564A2EB621943B8E00F2893E /* YCNounVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCNounVC.m; sourceTree = "<group>"; };
 		564A2EB821943C1500F2893E /* YCDispatchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDispatchVC.h; sourceTree = "<group>"; };
@@ -580,6 +586,8 @@
 				564618F621A534310066A33B /* YCNewModel.m */,
 				564618FB21A535B00066A33B /* YCRunTimeModel.h */,
 				564618FC21A535B00066A33B /* YCRunTimeModel.m */,
+				5646190121A54A8C0066A33B /* YCThread.h */,
+				5646190221A54A8C0066A33B /* YCThread.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -604,6 +612,8 @@
 				56325174219AA4A90091A84C /* YCCoreDataVC.m */,
 				564618E021A532D30066A33B /* YCRunTimeVC.h */,
 				564618E121A532D30066A33B /* YCRunTimeVC.m */,
+				564618FE21A54A5C0066A33B /* YCRunloopVC.h */,
+				564618FF21A54A5C0066A33B /* YCRunloopVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1378,6 +1388,7 @@
 			files = (
 				56B89CD521A291FB0043F6EA /* LCActionSheetConfig.m in Sources */,
 				56B89C7721A263280043F6EA /* MHObject.m in Sources */,
+				5646190321A54A8C0066A33B /* YCThread.m in Sources */,
 				56B89C8D21A267280043F6EA /* MHViewModel.m in Sources */,
 				5614366C218805D0002B3594 /* UIImage+GIF.m in Sources */,
 				56143668218805D0002B3594 /* SDWebImageManager.m in Sources */,
@@ -1418,6 +1429,7 @@
 				56133F102186B1C600419FE5 /* YCBaseAddTabbarItem.m in Sources */,
 				5614368821883D34002B3594 /* VVeboTableViewCell.m in Sources */,
 				56133EB12186984E00419FE5 /* AppDelegate.m in Sources */,
+				5646190021A54A5C0066A33B /* YCRunloopVC.m in Sources */,
 				56B89C4121A2627C0043F6EA /* MHPictureMetadata.m in Sources */,
 				56133F0A2186A5DB00419FE5 /* YCShopCartVC.m in Sources */,
 				56B89CE021A293DA0043F6EA /* NSDateFormatter+Extension.m in Sources */,
