@@ -9,6 +9,7 @@
 #import "YCNounVC.h"
 #import "YCArraySort.h"
 #import "YCStackForModel.h"
+#import "YCCharReverse.h"
 @interface YCNounVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) NSMutableArray *orginArray;///< <#注释#>
@@ -25,7 +26,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@{@"排序算法":@[@"冒泡排序",@"选择排序",@"插入排序",@"快速排序",@"归并排序",@"堆排序",@"希尔排序"]},@{@"二叉树":@[@"先序遍历",@"中序遍历",@"后序遍历"]}];
+        _dataArray=@[@{@"排序算法":@[@"冒泡排序",@"选择排序",@"插入排序",@"快速排序",@"归并排序",@"堆排序",@"希尔排序"]},@{@"二叉树":@[@"先序遍历",@"中序遍历",@"后序遍历"]},@{@"字符串":@[@"字符串反转"]}];
     }
     return _dataArray;
 }
@@ -107,6 +108,14 @@
             default:
                 break;
         }
+    }
+    if (indexPath.section==2) {
+        char ch[100];
+        NSString *string = @"hello";
+        NSInteger length = string.length;
+        memcpy(ch, [string cStringUsingEncoding:NSASCIIStringEncoding], 2 * length);
+        char_reverse(ch);
+        NSLog(@"CharReverse result:%s",ch);
     }
     DebugLog(@"array=%@",array);
 }
