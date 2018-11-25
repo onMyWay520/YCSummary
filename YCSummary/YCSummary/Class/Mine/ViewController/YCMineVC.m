@@ -13,6 +13,7 @@
 #import "YCRunTimeVC.h"
 #import "YCRunloopVC.h"
 #import "YCWaterflowController.h"
+#import "YCLikeOrUnlikeVC.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -27,7 +28,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流"];
+        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局"];
     }
     return _dataArray;
 }
@@ -68,9 +69,11 @@
       [self.navigationController pushViewController:[YCRunloopVC new] animated:false];
         
     }
-
-    else{
+    else if (indexPath.row==4){
         [self.navigationController pushViewController:[YCWaterflowController new] animated:false];
+    }
+    else{
+        [self.navigationController pushViewController:[YCLikeOrUnlikeVC new] animated:false];
     }
     
 }
