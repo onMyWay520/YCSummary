@@ -125,6 +125,8 @@
 		56DEDBB62189836200BDFA48 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DEDBB52189836200BDFA48 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		56DEDCE121899D7200BDFA48 /* ResourceWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */; };
 		56DEDCE221899D7200BDFA48 /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */; };
+		844A8E0021AA6F1400FF179A /* YCWaterflowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */; };
+		844A8E0321AA6F6B00FF179A /* YCWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E0221AA6F6B00FF179A /* YCWaterFlowLayout.m */; };
 		BD875F2361A5D5346585B6F5 /* Pods_YCSummary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA7DB6E35657A553438CC /* Pods_YCSummary.framework */; };
 /* End PBXBuildFile section */
 
@@ -391,6 +393,10 @@
 		56DEDCC3218995AE00BDFA48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceWeibo.bundle; sourceTree = "<group>"; };
 		56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
+		844A8DFE21AA6F1300FF179A /* YCWaterflowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCWaterflowController.h; sourceTree = "<group>"; };
+		844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCWaterflowController.m; sourceTree = "<group>"; };
+		844A8E0121AA6F6B00FF179A /* YCWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YCWaterFlowLayout.h; path = YCSummary/Class/Mine/ViewController/YCWaterFlowLayout.h; sourceTree = SOURCE_ROOT; };
+		844A8E0221AA6F6B00FF179A /* YCWaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YCWaterFlowLayout.m; path = YCSummary/Class/Mine/ViewController/YCWaterFlowLayout.m; sourceTree = SOURCE_ROOT; };
 		C26E5E336DF917403AB68AC5 /* Pods-YCSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSummary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCSummary/Pods-YCSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		CC35DA5965D2590B84C160A2 /* Pods-YCSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-YCSummary/Pods-YCSummary.release.xcconfig"; sourceTree = "<group>"; };
 		CD5CA7DB6E35657A553438CC /* Pods_YCSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -595,6 +601,8 @@
 		56133EEA2186A2BC00419FE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				844A8E0121AA6F6B00FF179A /* YCWaterFlowLayout.h */,
+				844A8E0221AA6F6B00FF179A /* YCWaterFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -614,6 +622,8 @@
 				564618E121A532D30066A33B /* YCRunTimeVC.m */,
 				564618FE21A54A5C0066A33B /* YCRunloopVC.h */,
 				564618FF21A54A5C0066A33B /* YCRunloopVC.m */,
+				844A8DFE21AA6F1300FF179A /* YCWaterflowController.h */,
+				844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1407,6 +1417,7 @@
 				56133EBF2186985100419FE5 /* main.m in Sources */,
 				564618FA21A534680066A33B /* NSObject+hook.m in Sources */,
 				56143669218805D0002B3594 /* SDWebImageDecoder.m in Sources */,
+				844A8E0021AA6F1400FF179A /* YCWaterflowController.m in Sources */,
 				56B89CD621A291FB0043F6EA /* LCActionSheet.m in Sources */,
 				564618F721A534310066A33B /* YCNewModel.m in Sources */,
 				56B89C8A21A266B00043F6EA /* MHTableViewController.m in Sources */,
@@ -1442,6 +1453,7 @@
 				56B89CAC21A28B920043F6EA /* YYWeakProxy.m in Sources */,
 				561436242187EC08002B3594 /* UIScreen+Additions.m in Sources */,
 				56B89C7C21A2636A0043F6EA /* MHEXTRuntimeExtensions.m in Sources */,
+				844A8E0321AA6F6B00FF179A /* YCWaterFlowLayout.m in Sources */,
 				564618DC21A4FAC70066A33B /* MHTableView.m in Sources */,
 				56143671218805D0002B3594 /* SDWebImageDownloaderOperation.m in Sources */,
 				5614363F2187F5FA002B3594 /* NSString+Additions.m in Sources */,

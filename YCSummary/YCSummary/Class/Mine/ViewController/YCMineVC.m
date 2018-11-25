@@ -12,6 +12,7 @@
 #import "YCCoreDataVC.h"
 #import "YCRunTimeVC.h"
 #import "YCRunloopVC.h"
+#import "YCWaterflowController.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -26,7 +27,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练",@"runtime演练",@"runloop演练"];
+        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流"];
     }
     return _dataArray;
 }
@@ -63,8 +64,13 @@
     else  if (indexPath.row==2) {
         [self.navigationController pushViewController:[YCRunTimeVC new] animated:false];
     }
+    else  if (indexPath.row==3) {
+      [self.navigationController pushViewController:[YCRunloopVC new] animated:false];
+        
+    }
+
     else{
-        [self.navigationController pushViewController:[YCRunloopVC new] animated:false];
+        [self.navigationController pushViewController:[YCWaterflowController new] animated:false];
     }
     
 }
