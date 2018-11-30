@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560467F321AFEAA3006111A8 /* YCOperationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 560467F221AFEAA3006111A8 /* YCOperationModel.m */; };
+		560467F621AFEB4C006111A8 /* YCOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 560467F521AFEB4C006111A8 /* YCOperationVC.m */; };
+		560467F921AFF096006111A8 /* YCOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 560467F821AFF096006111A8 /* YCOperation.m */; };
 		56123DDD219E74C8009C8176 /* YCCoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56123DDC219E74C8009C8176 /* YCCoreDataModel.m */; };
 		56123DE0219EB96C009C8176 /* YCStackForModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56123DDF219EB96C009C8176 /* YCStackForModel.m */; };
 		56133EB12186984E00419FE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56133EB02186984E00419FE5 /* AppDelegate.m */; };
@@ -164,6 +167,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560467F121AFEAA2006111A8 /* YCOperationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCOperationModel.h; sourceTree = "<group>"; };
+		560467F221AFEAA3006111A8 /* YCOperationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCOperationModel.m; sourceTree = "<group>"; };
+		560467F421AFEB4C006111A8 /* YCOperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCOperationVC.h; sourceTree = "<group>"; };
+		560467F521AFEB4C006111A8 /* YCOperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCOperationVC.m; sourceTree = "<group>"; };
+		560467F721AFF096006111A8 /* YCOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCOperation.h; sourceTree = "<group>"; };
+		560467F821AFF096006111A8 /* YCOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCOperation.m; sourceTree = "<group>"; };
 		56123DDB219E74C8009C8176 /* YCCoreDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCoreDataModel.h; sourceTree = "<group>"; };
 		56123DDC219E74C8009C8176 /* YCCoreDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCoreDataModel.m; sourceTree = "<group>"; };
 		56123DDE219EB96C009C8176 /* YCStackForModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCStackForModel.h; sourceTree = "<group>"; };
@@ -631,6 +640,10 @@
 				564618FC21A535B00066A33B /* YCRunTimeModel.m */,
 				5646190121A54A8C0066A33B /* YCThread.h */,
 				5646190221A54A8C0066A33B /* YCThread.m */,
+				560467F121AFEAA2006111A8 /* YCOperationModel.h */,
+				560467F221AFEAA3006111A8 /* YCOperationModel.m */,
+				560467F721AFF096006111A8 /* YCOperation.h */,
+				560467F821AFF096006111A8 /* YCOperation.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -665,6 +678,8 @@
 				844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */,
 				844A8E2521AAE3E300FF179A /* YCLikeOrUnlikeVC.h */,
 				844A8E2621AAE3E400FF179A /* YCLikeOrUnlikeVC.m */,
+				560467F421AFEB4C006111A8 /* YCOperationVC.h */,
+				560467F521AFEB4C006111A8 /* YCOperationVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1503,6 +1518,7 @@
 				56133EBF2186985100419FE5 /* main.m in Sources */,
 				564618FA21A534680066A33B /* NSObject+hook.m in Sources */,
 				56143669218805D0002B3594 /* SDWebImageDecoder.m in Sources */,
+				560467F921AFF096006111A8 /* YCOperation.m in Sources */,
 				844A8E0021AA6F1400FF179A /* YCWaterflowController.m in Sources */,
 				56B89CD621A291FB0043F6EA /* LCActionSheet.m in Sources */,
 				564618F721A534310066A33B /* YCNewModel.m in Sources */,
@@ -1535,6 +1551,7 @@
 				56133F072186A59700419FE5 /* YCFindVC.m in Sources */,
 				56B89CDF21A293DA0043F6EA /* NSDate+Extension.m in Sources */,
 				56143674218805D0002B3594 /* UIView+WebCacheOperation.m in Sources */,
+				560467F321AFEAA3006111A8 /* YCOperationModel.m in Sources */,
 				56133F012186A4ED00419FE5 /* YCHomeVC.m in Sources */,
 				5614368621883D34002B3594 /* VVeboLabel.m in Sources */,
 				5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */,
@@ -1551,6 +1568,7 @@
 				564618C521A4F0250066A33B /* YYPhotoGroupView.m in Sources */,
 				5614367821883593002B3594 /* FCBaseTableVC.m in Sources */,
 				564618A121A4EB220066A33B /* UIView+MHFrame.m in Sources */,
+				560467F621AFEB4C006111A8 /* YCOperationVC.m in Sources */,
 				56143675218805D0002B3594 /* UIButton+WebCache.m in Sources */,
 				564618E221A532D30066A33B /* YCRunTimeVC.m in Sources */,
 				5614366F218805D0002B3594 /* SDWebImagePrefetcher.m in Sources */,

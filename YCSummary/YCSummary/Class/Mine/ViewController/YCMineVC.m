@@ -14,6 +14,7 @@
 #import "YCRunloopVC.h"
 #import "YCWaterflowController.h"
 #import "YCLikeOrUnlikeVC.h"
+#import "YCOperationVC.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -28,7 +29,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局"];
+        _dataArray=@[@"算法",@"Dispatch函数",@"NSOperation演练",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局"];
     }
     return _dataArray;
 }
@@ -57,19 +58,22 @@
         [self.navigationController pushViewController:[YCNounVC new] animated:false];
     }
     else  if (indexPath.row==1) {
-        [self.navigationController pushViewController:[YCNounVC new] animated:false];
+        [self.navigationController pushViewController:[YCDispatchVC new] animated:false];
     }
     else  if (indexPath.row==2) {
-        [self.navigationController pushViewController:[YCCoreDataVC new] animated:false];
-    }
-    else  if (indexPath.row==2) {
-        [self.navigationController pushViewController:[YCRunTimeVC new] animated:false];
+        [self.navigationController pushViewController:[YCOperationVC new] animated:false];
     }
     else  if (indexPath.row==3) {
+        [self.navigationController pushViewController:[YCCoreDataVC new] animated:false];
+    }
+    else  if (indexPath.row==4) {
+        [self.navigationController pushViewController:[YCRunTimeVC new] animated:false];
+    }
+    else  if (indexPath.row==5) {
       [self.navigationController pushViewController:[YCRunloopVC new] animated:false];
         
     }
-    else if (indexPath.row==4){
+    else if (indexPath.row==6){
         [self.navigationController pushViewController:[YCWaterflowController new] animated:false];
     }
     else{

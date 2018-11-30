@@ -278,7 +278,7 @@
     
 }
 #pragma mark - 非线程安全
--(void)initTicketStatusNotSave{
+-(void)initTicketStatusNotSafe{
     NSLog(@"currentThread---%@",[NSThread currentThread]);
     NSLog(@"semaphore---begin");
     self.ticketCount=10;

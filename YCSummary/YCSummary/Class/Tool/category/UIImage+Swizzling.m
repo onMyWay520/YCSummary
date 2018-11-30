@@ -24,9 +24,9 @@
     
     // 判断是否存在图片
     if (image) {
-        NSLog(@"图片加载出来了");
+//        NSLog(@"图片加载出来了");
     } else {
-        NSLog(@"图片加载不出来");
+//        NSLog(@"图片加载不出来");
     }
     
     return image;

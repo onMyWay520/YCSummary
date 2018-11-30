@@ -87,7 +87,8 @@ static void *const YCKVOSemaphoreKey=@"YCKVOSemaphoreKey";
         [self addObserver:targetForKey forKeyPath:keyPath options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
     }
     [targetForKey yc_addBlcok:block];
-    [self yc_swizzleDealloc];
+    ////对第一次注册KVO的类进行dealloc方法调剂
+//    [self yc_swizzleDealloc];
     dispatch_semaphore_signal(kvoSemaphore);
 }
 #pragma mark - 移除掉指定的监听者
@@ -145,7 +146,7 @@ static void *const YCNotificationSemaphoreKey = "YCNotificationSemaphoreKey";
         [[NSNotificationCenter defaultCenter] addObserver:target selector:@selector(yc_doNotification:) name:name object:nil];
     }
     [target yc_addNotificationBlock:block];
-    [self yc_swizzleDealloc];
+//    [self yc_swizzleDealloc];
     dispatch_semaphore_signal(notificationSemaphore);//信号通知
 }
 #pragma mark - 移除单个通知
