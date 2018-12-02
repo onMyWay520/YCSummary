@@ -326,7 +326,7 @@
     
 }
 #pragma mark - 线程安全
--(void)initTicketStatusSave{
+-(void)initTicketStatusSafe{
     NSLog(@"currentThread---%@",[NSThread currentThread]);
     NSLog(@"semaphore---begin");
     semaphoreLock=dispatch_semaphore_create(1);
@@ -541,5 +541,61 @@
     });
     //开始执行dispatch源
     dispatch_resume(_timer);
+}
+- (void)createDispatchBlock{
+    //normal way
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("123",DISPATCH_QUEUE_CONCURRENT);
+    dispatch_block_t block = dispatch_block_create(0, ^{
+        NSLog(@"run block");
+    });
+    dispatch_async(concurrentQueue, block);
+    //QOS way
+    dispatch_block_t qosBlock = dispatch_block_create_with_qos_class(0, QOS_CLASS_USER_INITIATED, -1, ^{
+        NSLog(@"run qos block");
+    });
+    dispatch_async(concurrentQueue, qosBlock);
+}
+-(void)dispatchBlockWait{
+    dispatch_queue_t serialQueue = dispatch_queue_create("123", DISPATCH_QUEUE_SERIAL);
+    dispatch_block_t block = dispatch_block_create(0, ^{
+        NSLog(@"star");
+        [NSThread sleepForTimeInterval:5.f];
+        NSLog(@"end");
+    });
+    dispatch_async(serialQueue, block);
+    //设置DISPATCH_TIME_FOREVER会一直等到前面任务都完成
+    dispatch_block_wait(block, DISPATCH_TIME_FOREVER);
+    NSLog(@"ok, now can go on");
+}
+-(void)dispatchBlockNotify {
+    dispatch_queue_t concurrentQueue = dispatch_queue_create("123", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_block_t firstBlock = dispatch_block_create(0, ^{
+        NSLog(@"first block start");
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"first block end");
+    });
+    dispatch_async(concurrentQueue, firstBlock);
+    dispatch_block_t secondBlock = dispatch_block_create(0, ^{
+        NSLog(@"second block run");
+    });
+    //first block执行完才在serial queue中执行second block
+    dispatch_block_notify(firstBlock, concurrentQueue, secondBlock);
+}
+- (void)dispatchBlockCancel{
+    dispatch_queue_t serialQueue = dispatch_queue_create("123", DISPATCH_QUEUE_SERIAL);
+    dispatch_block_t __block firstBlock = dispatch_block_create(0, ^{
+        NSLog(@"first block start");
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"first block end");
+    });
+    dispatch_block_t secondBlock = dispatch_block_create(0, ^{
+        NSLog(@"second block run");
+    });
+    dispatch_async(serialQueue, firstBlock);
+    dispatch_async(serialQueue, secondBlock);
+    //取消secondBlock
+    dispatch_block_cancel(secondBlock);
+    /*2018-11-30 21:37:21.113345+0800 YCSummary[5399:84531] first block start
+     2018-11-30 21:37:23.118648+0800 YCSummary[5399:84531] first block end*/
 }
 @end

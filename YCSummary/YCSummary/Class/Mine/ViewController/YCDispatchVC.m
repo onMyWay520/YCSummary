@@ -24,7 +24,27 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"异步执行 + 并行队列",@"异步执行+串行队列",@"同步执行 + 并行队列",@"同步执行 + 串行队列",@"异步执行+主队列",@"线程间的通信",@"栅栏方法",@"快速迭代方法 dispatch_apply",@"dispatch_group_notify",@"dispatch_semaphore_t 信号量相关",@"非线程安全",@"线程安全",@"线程组",@"队列的挂起与恢复",@"dispatch_source",@"倒计时"];
+        _dataArray=@[
+        @"异步执行 + 并行队列",
+        @"异步执行+串行队列",
+        @"同步执行 + 并行队列",
+        @"同步执行 + 串行队列",
+        @"异步执行+主队列",
+        @"线程间的通信",
+        @"栅栏方法",
+        @"快速迭代方法 dispatch_apply",
+        @"dispatch_group_notify",
+        @"dispatch_semaphore_t 信号量相关",
+        @"非线程安全",
+        @"线程安全",
+        @"线程组",
+        @"队列的挂起与恢复",
+        @"dispatch_source",
+        @"倒计时",
+        @"dispatch_block_t函数",
+        @"dispatchBlockWait函数",
+        @"dispatchBlockNotify函数",
+        @"dispatchBlockCancel函数"];
     }
     return _dataArray;
 }
@@ -33,7 +53,7 @@
     if (!cell) {
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellIdentifier"];
     }
-    cell.textLabel.text=self.dataArray[indexPath.row];
+    cell.textLabel.text=[NSString stringWithFormat:@"%ld.%@",indexPath.row+1,self.dataArray[indexPath.row]];
     return cell;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -82,10 +102,10 @@
             [model semaphoreSync];
             break;
         case 10:
-            [model initTicketStatusNotSave];
+            [model initTicketStatusNotSafe];
             break;
         case 11:
-            [model initTicketStatusSave];
+            [model initTicketStatusSafe];
             break;
         case 12:
             [model dispatch_group];
@@ -97,8 +117,21 @@
             [model dispatch_source];
             break;
         case 15:
-            [model dispatch_source_set_timer];
+        [model dispatch_source_set_timer];
             break;
+        case 16:
+        [model createDispatchBlock];
+            break;
+        case 17:
+            [model dispatchBlockWait];
+            break;
+        case 18:
+            [model dispatchBlockNotify];
+            break;
+        case 19:
+            [model dispatchBlockCancel];
+            break;
+
         default:
             break;
     }

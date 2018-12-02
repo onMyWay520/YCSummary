@@ -32,9 +32,9 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark -dispatch_semaphore_t 信号量相关
 -(void)semaphoreSync;
 #pragma mark - 非线程安全
--(void)initTicketStatusNotSave;
+-(void)initTicketStatusNotSafe;
 #pragma mark - 线程安全
--(void)initTicketStatusSave;
+-(void)initTicketStatusSafe;
 #pragma mark - 线程组
 - (void)dispatch_group;
 #pragma mark - 队列的挂起与恢复
@@ -43,6 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)dispatch_source;
 #pragma mark - 倒计时
 -(void)dispatch_source_set_timer;
+-(void)createDispatchBlock;
+-(void)dispatchBlockWait;
+-(void)dispatchBlockNotify;
+-(void)dispatchBlockCancel;
 @end
 
 NS_ASSUME_NONNULL_END
