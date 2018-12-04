@@ -128,6 +128,9 @@
 		56DEDBB62189836200BDFA48 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DEDBB52189836200BDFA48 /* libsqlite3.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		56DEDCE121899D7200BDFA48 /* ResourceWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */; };
 		56DEDCE221899D7200BDFA48 /* EmoticonWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */; };
+		8404A79221B6C95600576BB7 /* YCBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404A79121B6C95600576BB7 /* YCBaseViewModel.m */; };
+		8404A79521B6C97B00576BB7 /* YCLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404A79421B6C97B00576BB7 /* YCLoginViewModel.m */; };
+		8404A79821B6CAB600576BB7 /* YCLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404A79721B6CAB600576BB7 /* YCLoginVC.m */; };
 		844A8E0021AA6F1400FF179A /* YCWaterflowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */; };
 		844A8E0321AA6F6B00FF179A /* YCWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E0221AA6F6B00FF179A /* YCWaterFlowLayout.m */; };
 		844A8E0A21AAE2D600FF179A /* CCDraggableCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E0521AAE2D600FF179A /* CCDraggableCardView.m */; };
@@ -418,6 +421,12 @@
 		56DEDCC3218995AE00BDFA48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		56DEDCD621899D7200BDFA48 /* ResourceWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceWeibo.bundle; sourceTree = "<group>"; };
 		56DEDCD721899D7200BDFA48 /* EmoticonWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonWeibo.bundle; sourceTree = "<group>"; };
+		8404A79021B6C95600576BB7 /* YCBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBaseViewModel.h; sourceTree = "<group>"; };
+		8404A79121B6C95600576BB7 /* YCBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBaseViewModel.m; sourceTree = "<group>"; };
+		8404A79321B6C97B00576BB7 /* YCLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCLoginViewModel.h; sourceTree = "<group>"; };
+		8404A79421B6C97B00576BB7 /* YCLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCLoginViewModel.m; sourceTree = "<group>"; };
+		8404A79621B6CAB600576BB7 /* YCLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCLoginVC.h; sourceTree = "<group>"; };
+		8404A79721B6CAB600576BB7 /* YCLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCLoginVC.m; sourceTree = "<group>"; };
 		844A8DFE21AA6F1300FF179A /* YCWaterflowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCWaterflowController.h; sourceTree = "<group>"; };
 		844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCWaterflowController.m; sourceTree = "<group>"; };
 		844A8E0121AA6F6B00FF179A /* YCWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YCWaterFlowLayout.h; path = YCSummary/Class/Mine/ViewController/YCWaterFlowLayout.h; sourceTree = SOURCE_ROOT; };
@@ -539,6 +548,7 @@
 		56133EE12186A2BC00419FE5 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				8404A78B21B6C91800576BB7 /* LoginOrRegister */,
 				56133EF32186A43400419FE5 /* ShopCart */,
 				56133EE22186A2BC00419FE5 /* Home */,
 				56133F142186E3D700419FE5 /* Publish */,
@@ -807,6 +817,8 @@
 		56133EF92186A48700419FE5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8404A79021B6C95600576BB7 /* YCBaseViewModel.h */,
+				8404A79121B6C95600576BB7 /* YCBaseViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1201,6 +1213,49 @@
 			path = weibo;
 			sourceTree = "<group>";
 		};
+		8404A78B21B6C91800576BB7 /* LoginOrRegister */ = {
+			isa = PBXGroup;
+			children = (
+				8404A78C21B6C91800576BB7 /* ViewModel */,
+				8404A78D21B6C91800576BB7 /* Model */,
+				8404A78E21B6C91800576BB7 /* View */,
+				8404A78F21B6C91900576BB7 /* ViewController */,
+			);
+			path = LoginOrRegister;
+			sourceTree = "<group>";
+		};
+		8404A78C21B6C91800576BB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8404A79321B6C97B00576BB7 /* YCLoginViewModel.h */,
+				8404A79421B6C97B00576BB7 /* YCLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8404A78D21B6C91800576BB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8404A78E21B6C91800576BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8404A78F21B6C91900576BB7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8404A79621B6CAB600576BB7 /* YCLoginVC.h */,
+				8404A79721B6CAB600576BB7 /* YCLoginVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		844A8E0421AAE2D600FF179A /* CCDraggableCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -1506,6 +1561,7 @@
 				564618EA21A5334D0066A33B /* UIViewController+IMPCategory.m in Sources */,
 				56133F132186E2DA00419FE5 /* YCBaseNavigationController.m in Sources */,
 				56B89C8721A265B10043F6EA /* MHTableViewModel.m in Sources */,
+				8404A79821B6CAB600576BB7 /* YCLoginVC.m in Sources */,
 				56325192219AB6960091A84C /* YCTeacher+CoreDataClass.m in Sources */,
 				56B89CB021A28B920043F6EA /* YYFileHash.m in Sources */,
 				56143667218805D0002B3594 /* MKAnnotationView+WebCache.m in Sources */,
@@ -1515,6 +1571,7 @@
 				56B89CC521A2916B0043F6EA /* LCActionSheet+MHExtension.m in Sources */,
 				564618E921A5334D0066A33B /* NSObject+YCKVO.m in Sources */,
 				56143673218805D0002B3594 /* UIImageView+WebCache.m in Sources */,
+				8404A79521B6C97B00576BB7 /* YCLoginViewModel.m in Sources */,
 				56133EBF2186985100419FE5 /* main.m in Sources */,
 				564618FA21A534680066A33B /* NSObject+hook.m in Sources */,
 				56143669218805D0002B3594 /* SDWebImageDecoder.m in Sources */,
@@ -1604,6 +1661,7 @@
 				564618EB21A5334D0066A33B /* NSDictionary+NilSafe.m in Sources */,
 				561436262187EC08002B3594 /* UIDevice+Additions.m in Sources */,
 				56B89CAE21A28B920043F6EA /* YYKeychain.m in Sources */,
+				8404A79221B6C95600576BB7 /* YCBaseViewModel.m in Sources */,
 				564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */,
 				56133F1E2186E43700419FE5 /* YCPublishVC.m in Sources */,
 				56B89C7D21A2636A0043F6EA /* MHReflection.m in Sources */,
