@@ -38,7 +38,9 @@
     
     [[_loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         NSLog(@"点击了  点击了");
-        [self.loginVM.loginCommand execute:@{@"account":self->_accountTF.text,@"password":self->_passwordTF.text}];
+        [self.loginVM.loginCommand execute:@{
+            @"account":self->_accountTF.text,
+            @"password":self->_passwordTF.text}];
     }];
 }
 - (YCLoginViewModel *)loginVM{
@@ -50,7 +52,7 @@
 -(UITextField *)accountTF{
     if (!_accountTF) {
         _accountTF=[[UITextField alloc]initWithFrame:CGRectMake(WIDTH(20), HEIGHT(200), SCREENT_WIDTH-WIDTH(40), HEIGHT(40))];
-        _accountTF.placeholder = @"请输入账号";
+        _accountTF.placeholder = @"请输入账号，至少1位";
         _accountTF.borderStyle = UITextBorderStyleRoundedRect;
 
     }
@@ -59,7 +61,7 @@
 -(UITextField *)passwordTF{
     if (!_passwordTF) {
         _passwordTF=[[UITextField alloc]initWithFrame:CGRectMake(self.accountTF.left, self.accountTF.bottom+HEIGHT(20), self.accountTF.width, self.accountTF.height)];
-        _passwordTF.placeholder = @"请输入密码";
+        _passwordTF.placeholder = @"请输入密码，至少6位";
         _passwordTF.borderStyle = UITextBorderStyleRoundedRect;
 
 
@@ -68,11 +70,13 @@
 }
 -(UIButton *)loginBtn{
     if (!_loginBtn) {
-        _loginBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+        _loginBtn=[UIButton buttonWithType:UIButtonTypeSystem];
         [_loginBtn setTitle:@"登陆" forState:0];
-        [_loginBtn setTitleColor:WHITECOLOR forState:UIControlStateNormal];
+        _loginBtn.titleLabel.font=FONT(18);
+//        [_loginBtn setTitleColor:WHITECOLOR forState:UIControlStateNormal];
 _loginBtn.frame=CGRectMake(self.accountTF.left, self.passwordTF.bottom+HEIGHT(40), self.accountTF.width, HEIGHT(50));
-        _loginBtn.backgroundColor=[UIColor redColor];
+    
+//        _loginBtn.backgroundColor=[UIColor redColor];
     }
     return _loginBtn;
 }

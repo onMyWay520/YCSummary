@@ -87,6 +87,7 @@
 		564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB621943B8E00F2893E /* YCNounVC.m */; };
 		564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB921943C1500F2893E /* YCDispatchVC.m */; };
 		564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EBC21943EE000F2893E /* YCDispatchModel.m */; };
+		564FB02E21BB74E000850E30 /* YCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FB02D21BB74E000850E30 /* YCProxy.m */; };
 		5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */ = {isa = PBXBuildFile; fileRef = 5654E63521928FED00CEBB46 /* YCArraySort.m */; };
 		56B89C3B21A2627C0043F6EA /* MHMomentShareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B89C2B21A2627C0043F6EA /* MHMomentShareInfo.m */; };
 		56B89C3C21A2627C0043F6EA /* MHPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B89C2C21A2627C0043F6EA /* MHPicture.m */; };
@@ -331,6 +332,8 @@
 		564A2EB921943C1500F2893E /* YCDispatchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDispatchVC.m; sourceTree = "<group>"; };
 		564A2EBB21943EE000F2893E /* YCDispatchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDispatchModel.h; sourceTree = "<group>"; };
 		564A2EBC21943EE000F2893E /* YCDispatchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDispatchModel.m; sourceTree = "<group>"; };
+		564FB02C21BB74E000850E30 /* YCProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCProxy.h; sourceTree = "<group>"; };
+		564FB02D21BB74E000850E30 /* YCProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCProxy.m; sourceTree = "<group>"; };
 		5654E63421928FED00CEBB46 /* YCArraySort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCArraySort.h; sourceTree = "<group>"; };
 		5654E63521928FED00CEBB46 /* YCArraySort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCArraySort.m; sourceTree = "<group>"; };
 		56B89C2B21A2627C0043F6EA /* MHMomentShareInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMomentShareInfo.m; sourceTree = "<group>"; };
@@ -654,6 +657,8 @@
 				560467F221AFEAA3006111A8 /* YCOperationModel.m */,
 				560467F721AFF096006111A8 /* YCOperation.h */,
 				560467F821AFF096006111A8 /* YCOperation.m */,
+				564FB02C21BB74E000850E30 /* YCProxy.h */,
+				564FB02D21BB74E000850E30 /* YCProxy.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1634,6 +1639,7 @@
 				56B89C3D21A2627C0043F6EA /* MHMoments.m in Sources */,
 				564618DF21A5040D0066A33B /* YCCharReverse.m in Sources */,
 				56B89C3C21A2627C0043F6EA /* MHPicture.m in Sources */,
+				564FB02E21BB74E000850E30 /* YCProxy.m in Sources */,
 				56143696218841A1002B3594 /* FDFeedViewController.m in Sources */,
 				56B89CB121A28B920043F6EA /* YYTimer.m in Sources */,
 				56B89C3B21A2627C0043F6EA /* MHMomentShareInfo.m in Sources */,

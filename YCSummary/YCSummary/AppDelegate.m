@@ -23,9 +23,11 @@
     [self.window makeKeyAndVisible];
     self.window.backgroundColor=[UIColor whiteColor];
     [YCBaseAddTabbarItem registerPlusButton];
-    YCLoginVC *vc=[[YCLoginVC alloc]init]; self.tabBarController=[[YCBaseTabbarController alloc]init];
+//    YCLoginVC *vc=[[YCLoginVC alloc]init];
+    
+    self.tabBarController=[[YCBaseTabbarController alloc]init];
     self.tabBarController.delegate = self;
-    [self.window setRootViewController:vc];
+    [self.window setRootViewController:self.tabBarController];
 //    [self customizeInterfaceWithTabBarController:self.tabBarController];
     return YES;
 }

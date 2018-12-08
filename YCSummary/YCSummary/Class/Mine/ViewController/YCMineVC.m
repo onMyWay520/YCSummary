@@ -15,6 +15,7 @@
 #import "YCWaterflowController.h"
 #import "YCLikeOrUnlikeVC.h"
 #import "YCOperationVC.h"
+#import "YCProxy.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -26,6 +27,13 @@
     self.title=@"我的";
     self.mainView.rowHeight=HEIGHT(40);
     self.mainView.frame=CGRectMake(0, 64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    
+//    YCDog *dog=[YCProxy proxyWithObject:[YCDog alloc]];
+//    [dog barking:4];
+    YCDog *dog=[[YCDog alloc]init];
+    YCProxy *proxy=[YCProxy alloc];
+    [proxy transformObjc:dog];
+    [proxy performSelector:@selector(shut)];
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
