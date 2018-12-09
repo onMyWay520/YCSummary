@@ -68,12 +68,27 @@ https://juejin.im/user/5656f11760b28da566412f03/posts<br>
 https://juejin.im/user/57f8ffda2e958a005581e3c0/posts<br>
 入职爱奇艺，J_Knight的文章总是清晰易懂，更新的也很勤快。<br>
 19.老谭笔记 http://www.tanhao.me/archives/<br>
---------------------
-以下是团队开发博客
-1.微信读书http://wereadteam.github.io/archives/<br>
-2.美团https://tech.meituan.com
+--------------------<br>
+以下是团队开发博客<br>
+1.微信读书http://wereadteam.github.io/archives/ <br>
+2.美团https://tech.meituan.com <br>
+github比较好的博客总结<br>
+1.微博达人总结https://github.com/awesome-tips/iOS-Tips <br>
+2.swift总结https://github.com/DarielChen/SwiftTips <br>
+3.百度Hi团队 iOS 技术周报 https://github.com/BaiduHiDeviOS/iOS-Tech-Weekly <br>
+4.前端总结 https://github.com/fouber/blog <br>
+5.iOS 源码探求系列 https://github.com/Desgard/iOS-Source-Probe <br>
+6.JavaScript深入系列、JavaScript专题系列、ES6系列、React系列 https://github.com/mqyqingfeng/Blog <br>
+7.全栈大牛总结bestswifter  https://github.com/bestswifter/blog <br>
+8. Halfrost-Field 冰霜之地 https://github.com/halfrost/Halfrost-Field <br>
+9. 偏前端 https://github.com/sivagao/blog <br>
+10.iOS 日常知识点的积累https://github.com/ifelseboyxx/xx_Notes <br>
+11. iOS, Swift, Objective-C 心得https://github.com/100mango/zen<br>
+12.https://github.com/xuwening/blog <br>
+13.ios开发当中常用遇到的问题和解决方法的收集，包括ios和swift https://github.com/coolnameismy/ios-tips<br>
+14.前端总结 https://github.com/amfe/article <br>
 
---------------------- 
+--------------------- <br>
 持续更新，敬请期待！！欢迎star<br>
 
 
