@@ -1,6 +1,6 @@
 总结一些个人认为非常经典，值得关注的博客。<br>
 1.[OneV's Den](https://onevcat.com/#blog)<br>
-大家尊称为喵神 @onevcat 的博客。介绍了很多WWDC文章，对 Swift 技术在国内的推广做了很大的贡献。<br>
+大家尊称为喵神王巍 @onevcat 的博客。介绍了很多WWDC文章，对 Swift 技术在国内的推广做了很大的贡献。<br>
 2.[Limboy’s HQ](https://limboy.me/category/tech.html)<br>
 李忠关于 RAC 、组件化的文章流传很广。
 [蘑菇街 App 的组件化之路](https://limboy.me/tech/2016/03/10/mgj-components.html)
@@ -13,7 +13,7 @@ Casa 对架构有很深的理解，《iOS 应用架构谈》系列文章
 4.[bang’s blog](http://blog.cnbang.net)<br>
 JSPatch 作者 bang 的博客。[《JSPatch – 动态更新iOS APP》](http://blog.cnbang.net/works/2767/)系列文章。现入职蚂蚁金服，曾是微信读书的项目负责人，稳定更新，每篇文章质量都很高。<br>
 5.[Garan no dou | 一只魔法师的工坊](https://blog.ibireme.com)<br>
-YYKit 作者的博客，很多文章如[《iOS 保持界面流畅的技巧》](https://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
+YYKit 作者ibireme郭曜源的博客，曾入职人人网，优酷，很多文章如[《iOS 保持界面流畅的技巧》](https://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/)
 [《深入理解RunLoop》](https://blog.ibireme.com/2015/05/18/runloop/)等都有极高的实用价值<br>
 6.[Draveness’s Blog](https://draveness.me/index)<br>
 被人称为灯塔的 Draveness 的博客。RAC系列文章
@@ -53,7 +53,7 @@ GitHub 第三方客户端 GitBucket 的作者，热衷于分享，曾在南航�
 唯敬，此前在百度任职<br>
 22.[里脊串的开发随笔](http://adad184.com/archives/)<br>
 23.[南峰子的技术博客](https://southpeak.github.io)<br>
-代表[runtime系列文章](https://southpeak.github.io/categories/objectivec/)<br>
+代表作[runtime系列文章](https://southpeak.github.io/categories/objectivec/)<br>
 24.[KANGZUBIN](https://kangzubin.com)<br>
 25.[黄文臣](https://blog.csdn.net/hello_hwc)<br>
 26.[FoolishTalk](https://www.foolishtalk.org)<br>
