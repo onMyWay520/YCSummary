@@ -1,6 +1,6 @@
 推荐一些我个人认为比较牛逼的三方库解析<br>
 1.[UITableView+FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell)<br>
-[孙源大神的《优化UITableViewCell高度计算的那些事》](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/ )
+[孙源大神的《优化UITableViewCell高度计算的那些事》](http://blog.sunnyxx.com/2015/05/17/cell-height-calculation/ )<br>
 2.[YYKit](https://github.com/ibireme/YYKit)<br>
 [ 《iOS 保持界面流畅的技巧》](https://blog.ibireme.com/2015/11/12/smooth_user_interfaces_for_ios/#more-41893)<br>
 [《YYCache 设计思路》](https://blog.ibireme.com/2015/10/26/yycache/)]<br>
@@ -13,6 +13,7 @@
 [《AsyncDisplayKit近一年的使用体会及疑难点》](https://juejin.im/post/5987cc536fb9a03c4b374bec)<br>
 [《新大陆：AsyncDisplayKit》](https://juejin.im/entry/5922b0ef8d6d810058e760c4)<br>
 4.[ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)<br>
+[《从零开始RN》专题](https://www.jianshu.com/c/5f409708aca0)<br>
 [ReactiveCocoa 中 RACSignal 是如何发送信号的](https://www.jianshu.com/p/d7d951a99db8)<br>
 [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析(上)](https://www.jianshu.com/p/9c4459ae71c5)<br>
 [ReactiveCocoa 中 RACSignal 所有变换操作底层实现分析(中)](https://www.jianshu.com/p/707ece08257e)<br>
@@ -22,11 +23,15 @@
 [ReactiveCocoa 中 RACCommand底层实现分析](https://www.jianshu.com/p/50938a5ace87)<br>
 [ReactiveCocoa 中 奇妙无比的“宏”魔法](https://www.jianshu.com/p/4c5613e256c8)<br>
 [ReactiveCocoa 4.0 swift篇](https://www.jianshu.com/nb/1825095)<br>
-5.[AFNetWorking](https://github.com/AFNetworking/AFNetworking)<br>
+5.[RxSwift](https://github.com/ReactiveX/RxSwift)<br>
+[RxSwift中文文档](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/)<br>
+[干货集中营-ReactiveCocoa+RXSwift+MVVM](http://www.cocoachina.com/ios/20160729/17244.html)<br>
+[RxSwift进阶与实战](https://www.jianshu.com/p/431f645cb805)<br>
+6.[AFNetWorking](https://github.com/AFNetworking/AFNetworking)<br>
 [AFNetworking 3.0 源码解读 总结（干货）（上）](https://www.jianshu.com/p/cadf3853ba3a)<br>
 [AFNetworking 3.0 源码解读 总结（干货）（下）](https://www.jianshu.com/p/0ce4163bd872)<br>
 [《AFNetworking 源码分析》](https://xiaozhuanlan.com/topic/7510469283)<br>
-6.[SDWebImage](https://github.com/SDWebImage/SDWebImage)<br>
+7.[SDWebImage](https://github.com/SDWebImage/SDWebImage)<br>
 [搬好小板凳看SDWebImage源码解析（一）](https://www.jianshu.com/p/f166c896a642)<br>
 [搬好小板凳看SDWebImage源码解析（二）](https://www.jianshu.com/p/e5e6ef6a6093)<br>
 
