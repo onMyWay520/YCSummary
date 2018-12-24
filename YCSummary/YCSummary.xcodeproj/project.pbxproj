@@ -87,6 +87,7 @@
 		564A2EB721943B8E00F2893E /* YCNounVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB621943B8E00F2893E /* YCNounVC.m */; };
 		564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EB921943C1500F2893E /* YCDispatchVC.m */; };
 		564A2EBD21943EE000F2893E /* YCDispatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564A2EBC21943EE000F2893E /* YCDispatchModel.m */; };
+		564DC6AC21CE43F700651F5B /* YCBinarySortTreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 564DC6AB21CE43F600651F5B /* YCBinarySortTreeModel.m */; };
 		564FB02E21BB74E000850E30 /* YCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 564FB02D21BB74E000850E30 /* YCProxy.m */; };
 		5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */ = {isa = PBXBuildFile; fileRef = 5654E63521928FED00CEBB46 /* YCArraySort.m */; };
 		56B89C3B21A2627C0043F6EA /* MHMomentShareInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B89C2B21A2627C0043F6EA /* MHMomentShareInfo.m */; };
@@ -332,6 +333,8 @@
 		564A2EB921943C1500F2893E /* YCDispatchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDispatchVC.m; sourceTree = "<group>"; };
 		564A2EBB21943EE000F2893E /* YCDispatchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDispatchModel.h; sourceTree = "<group>"; };
 		564A2EBC21943EE000F2893E /* YCDispatchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDispatchModel.m; sourceTree = "<group>"; };
+		564DC6AA21CE43F600651F5B /* YCBinarySortTreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBinarySortTreeModel.h; sourceTree = "<group>"; };
+		564DC6AB21CE43F600651F5B /* YCBinarySortTreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBinarySortTreeModel.m; sourceTree = "<group>"; };
 		564FB02C21BB74E000850E30 /* YCProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCProxy.h; sourceTree = "<group>"; };
 		564FB02D21BB74E000850E30 /* YCProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCProxy.m; sourceTree = "<group>"; };
 		5654E63421928FED00CEBB46 /* YCArraySort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCArraySort.h; sourceTree = "<group>"; };
@@ -641,6 +644,8 @@
 				56123DDC219E74C8009C8176 /* YCCoreDataModel.m */,
 				56123DDE219EB96C009C8176 /* YCStackForModel.h */,
 				56123DDF219EB96C009C8176 /* YCStackForModel.m */,
+				564DC6AA21CE43F600651F5B /* YCBinarySortTreeModel.h */,
+				564DC6AB21CE43F600651F5B /* YCBinarySortTreeModel.m */,
 				564618DD21A5040D0066A33B /* YCCharReverse.h */,
 				564618DE21A5040D0066A33B /* YCCharReverse.m */,
 				564618EF21A533A20066A33B /* YCPeople.h */,
@@ -1577,6 +1582,7 @@
 				564618E921A5334D0066A33B /* NSObject+YCKVO.m in Sources */,
 				56143673218805D0002B3594 /* UIImageView+WebCache.m in Sources */,
 				8404A79521B6C97B00576BB7 /* YCLoginViewModel.m in Sources */,
+				564DC6AC21CE43F700651F5B /* YCBinarySortTreeModel.m in Sources */,
 				56133EBF2186985100419FE5 /* main.m in Sources */,
 				564618FA21A534680066A33B /* NSObject+hook.m in Sources */,
 				56143669218805D0002B3594 /* SDWebImageDecoder.m in Sources */,

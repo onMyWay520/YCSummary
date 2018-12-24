@@ -10,9 +10,14 @@
 #import "YCArraySort.h"
 #import "YCStackForModel.h"
 #import "YCCharReverse.h"
+#import "YCBinarySortTreeModel.h"
 @interface YCNounVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,strong) NSMutableArray *orginArray;///< <#注释#>
+@property (nonatomic,strong) YCBinarySortTreeModel *treeModel;///<
+@property (nonatomic,strong) NSMutableArray *binaryTreeSortArray;///< <#注释#>
+
+
 @end
 
 @implementation YCNounVC
@@ -23,6 +28,23 @@
     self.mainView.rowHeight=HEIGHT(40);
     self.mainView.frame=CGRectMake(0,64, SCREENT_WIDTH, SCREENT_HEIGHT);
     [self showStack];
+    // 二叉排序树
+    NSArray *binaryTree = @[@7,@2,@1,@4,@6,@8,@9,@34,@21,@23,@12];
+    self.treeModel = [YCBinarySortTreeModel binarySortTreeCreate:binaryTree];
+    /*
+      7
+     / \
+    2   8
+   / \   \
+  1   4   9
+     /     \
+    6      34
+           /
+          21
+          / \
+         12 23
+     */
+
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
@@ -35,6 +57,12 @@
         _orginArray=[[NSMutableArray alloc] initWithObjects:@7,@2,@1,@4,@6,@8,@9,@34,@21,@23,@12,nil];
     }
     return _orginArray;
+}
+-(NSMutableArray *)binaryTreeSortArray{
+    if (!_binaryTreeSortArray) {
+        _binaryTreeSortArray=[NSMutableArray arrayWithCapacity:0];
+    }
+    return _binaryTreeSortArray;
 }
 -(void)showStack{
     YCStackForModel *stack=[[YCStackForModel alloc]init];
@@ -109,6 +137,23 @@
                 break;
         }
     }
+    if (indexPath.section==1) {
+        switch (indexPath.row) {
+            case 0:
+                [self preOrderTraverseTree];
+                break;
+            case 1:
+                [self inOrderTraverseTree];
+
+                break;
+            case 2:
+                [self postOrderTraverseTree];
+
+                break;
+            default:
+                break;
+        }
+    }
     if (indexPath.section==2) {
         char ch[100];
         NSString *string = @"hello";
@@ -118,8 +163,68 @@
         NSLog(@"CharReverse result:%s",ch);
     }
     DebugLog(@"array=%@",array);
-}
+   DebugLog(@"self.binaryTreeSortArray=%@",self.binaryTreeSortArray);
 
+}
+#pragma mark - 先序遍历
+-(void)preOrderTraverseTree{
+    [self.binaryTreeSortArray removeAllObjects];
+    [YCBinarySortTreeModel preOrderTraverseTree:self.treeModel handler:^(YCBinarySortTreeModel *node) {
+        [self.binaryTreeSortArray addObject:@(node.value)];
+    }];
+    /*
+     7,
+     2,
+     1,
+     4,
+     6,
+     8,
+     9,
+     34,
+     21,
+     12,
+     23*/
+}
+#pragma mark - 中序遍历
+-(void)inOrderTraverseTree{
+    [self.binaryTreeSortArray removeAllObjects];
+    [YCBinarySortTreeModel inOrderTraverseTree:self.treeModel handler:^(YCBinarySortTreeModel *node) {
+        [self.binaryTreeSortArray addObject:@(node.value)];
+    }];
+    /*
+     1,
+     2,
+     4,
+     6,
+     7,
+     8,
+     9,
+     12,
+     21,
+     23,
+     34*/
+
+}
+#pragma mark - 后序遍历
+-(void)postOrderTraverseTree{
+    [self.binaryTreeSortArray removeAllObjects];
+    [YCBinarySortTreeModel postOrderTraverseTree:self.treeModel handler:^(YCBinarySortTreeModel *node) {
+        [self.binaryTreeSortArray addObject:@(node.value)];
+    }];
+    /*
+     1,
+     6,
+     4,
+     2,
+     12,
+     23,
+     21,
+     34,
+     9,
+     8,
+     7
+     */
+}
 /*
 #pragma mark - Navigation
 

@@ -7,9 +7,7 @@
 [蘑菇街 App 的组件化之路·续](https://limboy.me/tech/2016/03/14/mgj-components-continued.html)
 博客中对架构、编程的思考都很精髓。听说现在转管理后不太更新技术文章了。<br>
 3.[Casa Taloyum](https://casatwy.com)<br>
-Casa 对架构有很深的理解，《iOS 应用架构谈》系列文章
-[《iOS应用架构谈 开篇》](https://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html)
-[《iOS应用架构谈 view层的组织和调用方案》](https://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html)影响深远。<br>
+田伟宇,此前在安居客，目前任职于天猫，全能人才，Casa 对架构有很深的理解，《iOS 应用架构谈》系列文章[《iOS应用架构谈 开篇》](https://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html)[《iOS应用架构谈 view层的组织和调用方案》](https://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html)[《iOS应用架构谈 网络层设计方案》](https://casatwy.com/iosying-yong-jia-gou-tan-wang-luo-ceng-she-ji-fang-an.html )[《iOS应用架构谈 本地持久化方案及动态部署》](https://casatwy.com/iosying-yong-jia-gou-tan-ben-di-chi-jiu-hua-fang-an-ji-dong-tai-bu-shu.html)[《iOS应用架构谈 组件化方案》](https://casatwy.com/iOS-Modulization.html "Permalink to iOS应用架构谈 组件化方案")影响深远。<br>
 4.[bang’s blog](http://blog.cnbang.net)<br>
 JSPatch 作者 bang 的博客。[《JSPatch – 动态更新iOS APP》](http://blog.cnbang.net/works/2767/)系列文章。现入职蚂蚁金服，曾是微信读书的项目负责人，稳定更新，每篇文章质量都很高。<br>
 5.[Garan no dou | 一只魔法师的工坊](https://blog.ibireme.com)<br>
@@ -91,7 +89,7 @@ github比较好的博客总结<br>
 12.[《对js，客户端，技术感悟，RN等总结》](https://github.com/xuwening/blog) <br>
 13.[《ios开发当中常用遇到的问题和解决方法的收集，包括ios和swift 》](https://github.com/coolnameismy/ios-tips)<br>
 14.[《前端总结》]( https://github.com/amfe/article) <br>
-15.[ios翻译、开发心得或学习笔记](https://github.com/nixzhu/dev-blog)<br>
+15.[《ios翻译、开发心得或学习笔记》](https://github.com/nixzhu/dev-blog)<br>
 
 持续更新，敬请期待！！欢迎star<br>
 
