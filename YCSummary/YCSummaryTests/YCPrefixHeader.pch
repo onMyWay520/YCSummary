@@ -16,6 +16,7 @@
 #import <YYWebImage/YYWebImage.h>
 #import "UIView+MH.h"
 #import <YYText/YYText.h>
+#import "NSString+Additions.h"
 //#import "YYLabel.h"
 //#import "YYKit.h"
 //#import "UIView+YYAdd.h"

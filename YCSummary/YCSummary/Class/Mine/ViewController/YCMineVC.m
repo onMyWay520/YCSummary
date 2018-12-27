@@ -34,6 +34,9 @@
     YCProxy *proxy=[YCProxy alloc];
     [proxy transformObjc:dog];
     [proxy performSelector:@selector(shut)];
+    NSString *ipString=@"1.234.3.230";
+    bool isValid=[NSString isValidIP:ipString];
+    DebugLog(@"isValid==%d",isValid);
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
