@@ -18,6 +18,23 @@
 @property(nonatomic,strong)YCPeople *people;
 @end
 @implementation YCRunTimeModel
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self getIMPFromSelector:@selector(aaa)];
+        [self getIMPFromSelector:@selector(test1)];
+        [self getIMPFromSelector:@selector(test2)];
+    }
+    return self;
+}
+
+- (void)test1 {
+    NSLog(@"test1");
+}
+
+- (void)test2 {
+    NSLog(@"test2");
+}
 #pragma mark - 增加属性
 -(void)addProperty{
     NSObject *object=[[NSObject alloc]init];
@@ -111,5 +128,31 @@
     // 当然，objc_msgSend 可以传递参数
     YCPeople *per=objc_msgSend(objc_msgSend(objc_getClass("Person"), sel_registerName("alloc")), sel_registerName("init"));
         objc_msgSend(per, @selector(run:), 100);
+}
+- (void)getIMPFromSelector:(SEL)aSelector{
+    // first method
+    IMP instanceIMP1 = class_getMethodImplementation(objc_getClass("YCRunTimeModel"), aSelector);
+    IMP classIMP1 = class_getMethodImplementation(objc_getMetaClass("YCRunTimeModel"), aSelector);
+    
+    // second method
+    Method instanceMethod = class_getInstanceMethod(objc_getClass("YCRunTimeModel"), aSelector);
+    IMP instanceIMP2 = method_getImplementation(instanceMethod);
+    
+    Method classMethod1 = class_getClassMethod(objc_getClass("YCRunTimeModel"), aSelector);
+    IMP classIMP2 = method_getImplementation(classMethod1);
+    
+    Method classMethod2 = class_getClassMethod(objc_getMetaClass("YCRunTimeModel"), aSelector);
+    IMP classIMP3 = method_getImplementation(classMethod2);
+    
+    NSLog(@"instance1:%p instance2:%p class1:%p class2:%p class3:%p",instanceIMP1,instanceIMP2,classIMP1,classIMP2,classIMP3);
+    /*2018-12-28 16:41:42.587371+0800 YCSummary[14040:289609] instance1:0x1064e8a00 instance2:0x0 class1:0x1064e8a00 class2:0x0 class3:0x0
+     2018-12-28 16:41:42.587534+0800 YCSummary[14040:289609] instance1:0x1052b2240 instance2:0x1052b2240 class1:0x1064e8a00 class2:0x0 class3:0x0
+     2018-12-28 16:41:42.587658+0800 YCSummary[14040:289609] instance1:0x1052b2270 instance2:0x1052b2270 class1:0x1064e8a00 class2:0x0 class3:0x0
+     2018-12-28 16:41:42.587763+0800 YCSummary[14040:289609] instance1:0x1064e8a00 instance2:0x0 class1:0x1064e8a00 class2:0x0 class3:0x0
+     2018-12-28 16:41:42.587858+0800 YCSummary[14040:289609] instance1:0x1052b2240 instance2:0x1052b2240 class1:0x1064e8a00 class2:0x0 class3:0x0
+     2018-12-28 16:41:42.587949+0800 YCSummary[14040:289609] instance1:0x1052b2270 instance2:0x1052b2270 class1:0x1064e8a00 class2:0x0 class3:0x0*/
+    /*0x1064e8a00出现了8次，这个是在调用class_getMethodImplementation()方法时，无法找到对应实现时返回的相同的一个地址，无论该方法是在实例方法或类方法，无论是否对一个实例调用该方法，返回的地址都是相同的，但是每次运行该程序时返回的地址并不相同，而对于另一种方法，如果找不到对应的实现，则返回0x0
+     
+    */
 }
 @end

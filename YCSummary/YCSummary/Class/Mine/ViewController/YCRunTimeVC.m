@@ -27,6 +27,9 @@
     [self yc_addNotificationForName:@"YCNotification" block:^(NSNotification * _Nonnull notification) {
         NSLog(@"接收到通知===%@",notification.userInfo);
     }];
+     YCRunTimeModel *model=[[YCRunTimeModel alloc]init];
+    YCRunTimeModel *model2=[[YCRunTimeModel alloc]init];
+
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
