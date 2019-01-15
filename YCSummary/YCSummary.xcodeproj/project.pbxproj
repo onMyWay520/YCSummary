@@ -151,6 +151,7 @@
 		844A8E2421AAE36B00FF179A /* image_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 844A8E1821AAE36B00FF179A /* image_6.jpg */; };
 		844A8E2721AAE3E400FF179A /* YCLikeOrUnlikeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E2621AAE3E400FF179A /* YCLikeOrUnlikeVC.m */; };
 		844A8E2A21AAE47500FF179A /* YCCustomCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E2921AAE47500FF179A /* YCCustomCardView.m */; };
+		844C5C9321EE2D3D001D279D /* YCKVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C5C9221EE2D3D001D279D /* YCKVOVC.m */; };
 		BD875F2361A5D5346585B6F5 /* Pods_YCSummary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5CA7DB6E35657A553438CC /* Pods_YCSummary.framework */; };
 /* End PBXBuildFile section */
 
@@ -458,6 +459,8 @@
 		844A8E2621AAE3E400FF179A /* YCLikeOrUnlikeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCLikeOrUnlikeVC.m; sourceTree = "<group>"; };
 		844A8E2821AAE47500FF179A /* YCCustomCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCustomCardView.h; sourceTree = "<group>"; };
 		844A8E2921AAE47500FF179A /* YCCustomCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCustomCardView.m; sourceTree = "<group>"; };
+		844C5C9121EE2D3D001D279D /* YCKVOVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCKVOVC.h; sourceTree = "<group>"; };
+		844C5C9221EE2D3D001D279D /* YCKVOVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCKVOVC.m; sourceTree = "<group>"; };
 		C26E5E336DF917403AB68AC5 /* Pods-YCSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSummary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCSummary/Pods-YCSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		CC35DA5965D2590B84C160A2 /* Pods-YCSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCSummary.release.xcconfig"; path = "Pods/Target Support Files/Pods-YCSummary/Pods-YCSummary.release.xcconfig"; sourceTree = "<group>"; };
 		CD5CA7DB6E35657A553438CC /* Pods_YCSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -700,6 +703,8 @@
 				844A8E2621AAE3E400FF179A /* YCLikeOrUnlikeVC.m */,
 				560467F421AFEB4C006111A8 /* YCOperationVC.h */,
 				560467F521AFEB4C006111A8 /* YCOperationVC.m */,
+				844C5C9121EE2D3D001D279D /* YCKVOVC.h */,
+				844C5C9221EE2D3D001D279D /* YCKVOVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1633,6 +1638,7 @@
 				5614363F2187F5FA002B3594 /* NSString+Additions.m in Sources */,
 				5614366A218805D0002B3594 /* UIImageView+HighlightedWebCache.m in Sources */,
 				564618F421A533D90066A33B /* YCArchieveModel.m in Sources */,
+				844C5C9321EE2D3D001D279D /* YCKVOVC.m in Sources */,
 				564618C521A4F0250066A33B /* YYPhotoGroupView.m in Sources */,
 				5614367821883593002B3594 /* FCBaseTableVC.m in Sources */,
 				564618A121A4EB220066A33B /* UIView+MHFrame.m in Sources */,
