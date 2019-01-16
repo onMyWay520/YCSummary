@@ -8,6 +8,7 @@
 
 #import "YCKVOVC.h"
 #import "YCPeople.h"
+#import <objc/runtime.h>
 @interface YCKVOVC ()
 @property (nonatomic,strong) YCPeople *people;///<
 @end
@@ -17,12 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.people=[[YCPeople alloc]init];
+    [self.people setName:@"zhangsan"];
+    NSLog(@"1=%@=%p", object_getClass(self.people),[self.people methodForSelector:@selector(setName:)]);//1=YCPeople
+    [self.people addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+    NSLog(@"2=%@=%p", object_getClass(self.people),[self.people methodForSelector:@selector(setName:)]);//2=NSKVONotifying_YCPeople
     
-    [self.people setName:@"zhangsan"];
-    
-//    NSLog(@"%@", object_getClass(self.people));
- [self.people addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
-//    NSLog(@"%@", object_getClass(self.people));
+    /*Apple 使用了isa混写来实现kvo，当观察对象A时，kvo机制动态创建一个新的命为NSKVONotifying_A的新类，该类继承自对象A的本类，且KVO为NSKVONotifying_A重写观察属性的setter方法，setter方法会负责在调用远setter方法之前和之后，通知所有观察对象属性值的更改情况*/
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
@@ -32,6 +33,11 @@
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     NSLog(@"%@", change);
+    /*{
+      kind = 1;
+      new = lisi;
+      old = zhangsan;
+    }*/
 }
 
 - (void)dealloc{

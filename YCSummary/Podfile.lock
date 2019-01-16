@@ -17,6 +17,7 @@ PODS:
   - CocoaSecurity (1.2.4)
   - CYLTabBarController (1.17.17)
   - JDStatusBarNotification (1.5.5)
+  - KVOController (1.2.0)
   - Masonry (1.1.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - CocoaSecurity (= 1.2.4)
   - CYLTabBarController
   - JDStatusBarNotification (= 1.5.5)
+  - KVOController
   - Masonry
   - MJExtension (= 3.0.13)
   - MJRefresh (= 3.1.12)
@@ -75,6 +77,7 @@ SPEC REPOS:
     - CocoaSecurity
     - CYLTabBarController
     - JDStatusBarNotification
+    - KVOController
     - Masonry
     - MJExtension
     - MJRefresh
@@ -105,6 +108,7 @@ SPEC CHECKSUMS:
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   CYLTabBarController: ed3184222048f6e7a57f9b175934580ff6e8d6fb
   JDStatusBarNotification: 2b4f29bd68a60d7aa2f190b5265f1ce59c18aaf8
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
@@ -121,6 +125,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: b77190717168046f75f48f162fedf2b6875bd4c8
+PODFILE CHECKSUM: dfa481c9999c7d9c7e25665f6d199c2319448a46
 
 COCOAPODS: 1.5.3
