@@ -17,6 +17,7 @@
 #import "YCOperationVC.h"
 #import "YCProxy.h"
 #import "YCKVOVC.h"
+#import "YCBlockVC.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -41,7 +42,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"NSOperation演练",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局",@"KVO演练"];
+        _dataArray=@[@"算法",@"Dispatch函数",@"NSOperation演练",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局",@"KVO演练",@"block演练"];
     }
     return _dataArray;
 }
@@ -91,8 +92,11 @@
    else if (indexPath.row==7){
         [self.navigationController pushViewController:[YCLikeOrUnlikeVC new] animated:false];
    }
+   else if (indexPath.row==8){
+       [self.navigationController pushViewController:[YCKVOVC new] animated:false];
+   }
    else{
-        [self.navigationController pushViewController:[YCKVOVC new] animated:false];
+        [self.navigationController pushViewController:[YCBlockVC new] animated:false];
        
    }
     

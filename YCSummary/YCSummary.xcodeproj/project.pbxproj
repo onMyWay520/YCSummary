@@ -133,6 +133,7 @@
 		8404A79221B6C95600576BB7 /* YCBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404A79121B6C95600576BB7 /* YCBaseViewModel.m */; };
 		8404A79521B6C97B00576BB7 /* YCLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404A79421B6C97B00576BB7 /* YCLoginViewModel.m */; };
 		8404A79821B6CAB600576BB7 /* YCLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404A79721B6CAB600576BB7 /* YCLoginVC.m */; };
+		844052AC21F0BE760040B763 /* YCBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844052AB21F0BE760040B763 /* YCBlockVC.m */; };
 		844A8E0021AA6F1400FF179A /* YCWaterflowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */; };
 		844A8E0321AA6F6B00FF179A /* YCWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E0221AA6F6B00FF179A /* YCWaterFlowLayout.m */; };
 		844A8E0A21AAE2D600FF179A /* CCDraggableCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A8E0521AAE2D600FF179A /* CCDraggableCardView.m */; };
@@ -434,6 +435,8 @@
 		8404A79421B6C97B00576BB7 /* YCLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCLoginViewModel.m; sourceTree = "<group>"; };
 		8404A79621B6CAB600576BB7 /* YCLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCLoginVC.h; sourceTree = "<group>"; };
 		8404A79721B6CAB600576BB7 /* YCLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCLoginVC.m; sourceTree = "<group>"; };
+		844052AA21F0BE760040B763 /* YCBlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBlockVC.h; sourceTree = "<group>"; };
+		844052AB21F0BE760040B763 /* YCBlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBlockVC.m; sourceTree = "<group>"; };
 		844A8DFE21AA6F1300FF179A /* YCWaterflowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCWaterflowController.h; sourceTree = "<group>"; };
 		844A8DFF21AA6F1300FF179A /* YCWaterflowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCWaterflowController.m; sourceTree = "<group>"; };
 		844A8E0121AA6F6B00FF179A /* YCWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YCWaterFlowLayout.h; path = YCSummary/Class/Mine/ViewController/YCWaterFlowLayout.h; sourceTree = SOURCE_ROOT; };
@@ -705,6 +708,8 @@
 				560467F521AFEB4C006111A8 /* YCOperationVC.m */,
 				844C5C9121EE2D3D001D279D /* YCKVOVC.h */,
 				844C5C9221EE2D3D001D279D /* YCKVOVC.m */,
+				844052AA21F0BE760040B763 /* YCBlockVC.h */,
+				844052AB21F0BE760040B763 /* YCBlockVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1677,6 +1682,7 @@
 				56325175219AA4A90091A84C /* YCCoreDataVC.m in Sources */,
 				5614366D218805D0002B3594 /* UIImage+MultiFormat.m in Sources */,
 				561436272187EC08002B3594 /* UITableView+Additions.m in Sources */,
+				844052AC21F0BE760040B763 /* YCBlockVC.m in Sources */,
 				56B89CD221A291FB0043F6EA /* LCActionSheetViewController.m in Sources */,
 				564618EB21A5334D0066A33B /* NSDictionary+NilSafe.m in Sources */,
 				561436262187EC08002B3594 /* UIDevice+Additions.m in Sources */,
