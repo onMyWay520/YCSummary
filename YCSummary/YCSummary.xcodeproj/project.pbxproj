@@ -28,6 +28,7 @@
 		56133F102186B1C600419FE5 /* YCBaseAddTabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56133F0F2186B1C600419FE5 /* YCBaseAddTabbarItem.m */; };
 		56133F132186E2DA00419FE5 /* YCBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56133F122186E2DA00419FE5 /* YCBaseNavigationController.m */; };
 		56133F1E2186E43700419FE5 /* YCPublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56133F1D2186E43700419FE5 /* YCPublishVC.m */; };
+		561418AB21F7145E00B0210B /* YCReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 561418AA21F7145E00B0210B /* YCReverseList.m */; };
 		561436242187EC08002B3594 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614361C2187EC08002B3594 /* UIScreen+Additions.m */; };
 		561436252187EC08002B3594 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614361D2187EC08002B3594 /* UIView+Additions.m */; };
 		561436262187EC08002B3594 /* UIDevice+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 561436202187EC08002B3594 /* UIDevice+Additions.m */; };
@@ -216,6 +217,8 @@
 		56133F122186E2DA00419FE5 /* YCBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBaseNavigationController.m; sourceTree = "<group>"; };
 		56133F1C2186E43700419FE5 /* YCPublishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPublishVC.h; sourceTree = "<group>"; };
 		56133F1D2186E43700419FE5 /* YCPublishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPublishVC.m; sourceTree = "<group>"; };
+		561418A921F7145E00B0210B /* YCReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCReverseList.h; sourceTree = "<group>"; };
+		561418AA21F7145E00B0210B /* YCReverseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCReverseList.m; sourceTree = "<group>"; };
 		5614361B2187EC08002B3594 /* UITableView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Additions.h"; sourceTree = "<group>"; };
 		5614361C2187EC08002B3594 /* UIScreen+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Additions.m"; sourceTree = "<group>"; };
 		5614361D2187EC08002B3594 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
@@ -654,6 +657,8 @@
 				564DC6AB21CE43F600651F5B /* YCBinarySortTreeModel.m */,
 				564618DD21A5040D0066A33B /* YCCharReverse.h */,
 				564618DE21A5040D0066A33B /* YCCharReverse.m */,
+				561418A921F7145E00B0210B /* YCReverseList.h */,
+				561418AA21F7145E00B0210B /* YCReverseList.m */,
 				564618EF21A533A20066A33B /* YCPeople.h */,
 				564618F021A533A20066A33B /* YCPeople.m */,
 				564618F221A533D90066A33B /* YCArchieveModel.h */,
@@ -1676,6 +1681,7 @@
 				564A2EBA21943C1500F2893E /* YCDispatchVC.m in Sources */,
 				56B89C9021A2887B0043F6EA /* MHConstant.m in Sources */,
 				56123DE0219EB96C009C8176 /* YCStackForModel.m in Sources */,
+				561418AB21F7145E00B0210B /* YCReverseList.m in Sources */,
 				56B89CB721A28BEA0043F6EA /* UIScrollView+MHRefresh.m in Sources */,
 				56123DDD219E74C8009C8176 /* YCCoreDataModel.m in Sources */,
 				56325193219AB6960091A84C /* YCTeacher+CoreDataProperties.m in Sources */,

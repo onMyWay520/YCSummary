@@ -10,8 +10,12 @@
 #import "FCBaseTableVC.h"
 
 NS_ASSUME_NONNULL_BEGIN
+typedef NSString * (^MyBlock)(NSString *);
+typedef void (^MyBlock2)(NSString *);
 
 @interface YCBlockVC : FCBaseTableVC
+@property (nonatomic, copy) MyBlock myblock;
+@property (nonatomic, copy) MyBlock2 myblock2;
 
 @end
 

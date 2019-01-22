@@ -18,6 +18,7 @@
 #import "YCProxy.h"
 #import "YCKVOVC.h"
 #import "YCBlockVC.h"
+#import "YCReverseList.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -39,6 +40,7 @@
     NSString *ipString=@"1.234.3.230";
     bool isValid=[NSString isValidIP:ipString];
     DebugLog(@"isValid==%d",isValid);
+
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
@@ -96,7 +98,12 @@
        [self.navigationController pushViewController:[YCKVOVC new] animated:false];
    }
    else{
-        [self.navigationController pushViewController:[YCBlockVC new] animated:false];
+       YCBlockVC *vc=[YCBlockVC new];
+       vc.myblock2 = ^(NSString * str) {
+           
+           DebugLog(@"str==%@",str);
+       };
+        [self.navigationController pushViewController:vc animated:false];
        
    }
     
