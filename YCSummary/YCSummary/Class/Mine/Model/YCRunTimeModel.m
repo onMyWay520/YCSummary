@@ -96,7 +96,7 @@
 #pragma mark - 获取所有的方法
 -(void)getAllMethod{
         NSArray *array =[UIButton getAllMethods];//获取类中所有方法
-    //    NSArray *propArray =[Person yc_objcProperties];//获取类中所有属性
+//        NSArray *propArray =[YCPerson yc_objcProperties];//获取类中所有属性
 //    NSArray *protolArray=[YCArchieveModel getProtocolList];//获取类中所有协议
     //    NSString *className =[ViewController getClassName];//类名
     //    NSArray *array =[ViewController getIvarList];//获取类中所有成员变量

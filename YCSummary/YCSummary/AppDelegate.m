@@ -10,6 +10,7 @@
 #import "YCBaseTabbarController.h"
 #import "YCBaseAddTabbarItem.h"
 #import "YCLoginVC.h"
+
 #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
 @interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 @property(nonatomic,strong) YCBaseTabbarController*tabBarController;
