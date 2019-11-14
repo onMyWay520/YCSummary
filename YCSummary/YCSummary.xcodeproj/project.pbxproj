@@ -61,6 +61,8 @@
 		5614369121883F33002B3594 /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5614368F21883F33002B3594 /* FDFeedCell.xib */; };
 		5614369321884155002B3594 /* FData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5614369221884155002B3594 /* FData.json */; };
 		56143696218841A1002B3594 /* FDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56143695218841A1002B3594 /* FDFeedViewController.m */; };
+		56252355237D251600B298B3 /* YCBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56252354237D251600B298B3 /* YCBezierPathView.m */; };
+		56252358237D255B00B298B3 /* YCBezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56252357237D255B00B298B3 /* YCBezierPathVC.m */; };
 		562EBD2F2307EF4D002E32F7 /* UIViewController+YCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 562EBD2E2307EF4D002E32F7 /* UIViewController+YCSwizzle.m */; };
 		56325171219AA3710091A84C /* YCSchool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56325168219AA3710091A84C /* YCSchool.xcdatamodeld */; };
 		56325175219AA4A90091A84C /* YCCoreDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56325174219AA4A90091A84C /* YCCoreDataVC.m */; };
@@ -284,6 +286,10 @@
 		5614369221884155002B3594 /* FData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FData.json; sourceTree = "<group>"; };
 		56143694218841A1002B3594 /* FDFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFeedViewController.h; sourceTree = "<group>"; };
 		56143695218841A1002B3594 /* FDFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFeedViewController.m; sourceTree = "<group>"; };
+		56252353237D251600B298B3 /* YCBezierPathView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBezierPathView.h; sourceTree = "<group>"; };
+		56252354237D251600B298B3 /* YCBezierPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBezierPathView.m; sourceTree = "<group>"; wrapsLines = 0; };
+		56252356237D255B00B298B3 /* YCBezierPathVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBezierPathVC.h; sourceTree = "<group>"; };
+		56252357237D255B00B298B3 /* YCBezierPathVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBezierPathVC.m; sourceTree = "<group>"; };
 		562EBD2D2307EF4D002E32F7 /* UIViewController+YCSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCSwizzle.h"; sourceTree = "<group>"; };
 		562EBD2E2307EF4D002E32F7 /* UIViewController+YCSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCSwizzle.m"; sourceTree = "<group>"; };
 		56325169219AA3710091A84C /* YCSchool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YCSchool.xcdatamodel; sourceTree = "<group>"; };
@@ -685,6 +691,7 @@
 		56133EEA2186A2BC00419FE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56252352237D24DB00B298B3 /* BezierPathView */,
 				844A8E0C21AAE36B00FF179A /* Resources */,
 				844A8E0421AAE2D600FF179A /* CCDraggableCard */,
 				844A8E0121AA6F6B00FF179A /* YCWaterFlowLayout.h */,
@@ -718,6 +725,8 @@
 				844C5C9221EE2D3D001D279D /* YCKVOVC.m */,
 				844052AA21F0BE760040B763 /* YCBlockVC.h */,
 				844052AB21F0BE760040B763 /* YCBlockVC.m */,
+				56252356237D255B00B298B3 /* YCBezierPathVC.h */,
+				56252357237D255B00B298B3 /* YCBezierPathVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1034,6 +1043,15 @@
 				5614368521883D34002B3594 /* VVeboTableViewCell.h */,
 			);
 			path = VVeboTableView;
+			sourceTree = "<group>";
+		};
+		56252352237D24DB00B298B3 /* BezierPathView */ = {
+			isa = PBXGroup;
+			children = (
+				56252353237D251600B298B3 /* YCBezierPathView.h */,
+				56252354237D251600B298B3 /* YCBezierPathView.m */,
+			);
+			path = BezierPathView;
 			sourceTree = "<group>";
 		};
 		56325163219AA3710091A84C /* school */ = {
@@ -1625,6 +1643,7 @@
 				564618E221A532D30066A33B /* YCRunTimeVC.m in Sources */,
 				5614366F218805D0002B3594 /* SDWebImagePrefetcher.m in Sources */,
 				5614366B218805D0002B3594 /* SDWebImageDownloader.m in Sources */,
+				56252355237D251600B298B3 /* YCBezierPathView.m in Sources */,
 				56325171219AA3710091A84C /* YCSchool.xcdatamodeld in Sources */,
 				56B89C3D21A2627C0043F6EA /* MHMoments.m in Sources */,
 				564618DF21A5040D0066A33B /* YCCharReverse.m in Sources */,
@@ -1634,6 +1653,7 @@
 				56B89CB121A28B920043F6EA /* YYTimer.m in Sources */,
 				56B89C3B21A2627C0043F6EA /* MHMomentShareInfo.m in Sources */,
 				5614366E218805D0002B3594 /* SDWebImageCompat.m in Sources */,
+				56252358237D255B00B298B3 /* YCBezierPathVC.m in Sources */,
 				5614368721883D34002B3594 /* VVeboTableView.m in Sources */,
 				56B89CB221A28B920043F6EA /* YYThreadSafeArray.m in Sources */,
 				5632518C219AB6380091A84C /* YCStudent+CoreDataClass.m in Sources */,
