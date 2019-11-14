@@ -20,6 +20,7 @@
 #import "YCBlockVC.h"
 #import "YCReverseList.h"
 #import "YCBezierPathVC.h"
+#import "YCDrawRectVC.h"
 @interface YCMineVC ()
 @property (nonatomic,strong) NSArray *dataArray;
 @end
@@ -45,7 +46,7 @@
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
-        _dataArray=@[@"算法",@"Dispatch函数",@"NSOperation演练",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局",@"KVO演练",@"block演练",@"BezierPath"];
+        _dataArray=@[@"算法",@"Dispatch函数",@"NSOperation演练",@"coredata演练",@"runtime演练",@"runloop演练",@"瀑布流",@"仿探探布局",@"KVO演练",@"block演练",@"BezierPath",@"drawRect"];
     }
     return _dataArray;
 }
@@ -107,8 +108,12 @@
         [self.navigationController pushViewController:vc animated:false];
        
    }
-  else{
+  else if (indexPath.row==10){
       [self.navigationController pushViewController: [YCBezierPathVC new] animated:NO];
+  }
+  else{
+      [self.navigationController pushViewController: [YCDrawRectVC new] animated:NO];
+
   }
     
 }

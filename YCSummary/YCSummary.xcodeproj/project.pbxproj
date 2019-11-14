@@ -63,6 +63,8 @@
 		56143696218841A1002B3594 /* FDFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56143695218841A1002B3594 /* FDFeedViewController.m */; };
 		56252355237D251600B298B3 /* YCBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56252354237D251600B298B3 /* YCBezierPathView.m */; };
 		56252358237D255B00B298B3 /* YCBezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56252357237D255B00B298B3 /* YCBezierPathVC.m */; };
+		5625235C237D39F200B298B3 /* YCDrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625235B237D39F200B298B3 /* YCDrawRectView.m */; };
+		5625235F237D3A7A00B298B3 /* YCDrawRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5625235E237D3A7A00B298B3 /* YCDrawRectVC.m */; };
 		562EBD2F2307EF4D002E32F7 /* UIViewController+YCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 562EBD2E2307EF4D002E32F7 /* UIViewController+YCSwizzle.m */; };
 		56325171219AA3710091A84C /* YCSchool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56325168219AA3710091A84C /* YCSchool.xcdatamodeld */; };
 		56325175219AA4A90091A84C /* YCCoreDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56325174219AA4A90091A84C /* YCCoreDataVC.m */; };
@@ -290,6 +292,10 @@
 		56252354237D251600B298B3 /* YCBezierPathView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBezierPathView.m; sourceTree = "<group>"; wrapsLines = 0; };
 		56252356237D255B00B298B3 /* YCBezierPathVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCBezierPathVC.h; sourceTree = "<group>"; };
 		56252357237D255B00B298B3 /* YCBezierPathVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCBezierPathVC.m; sourceTree = "<group>"; };
+		5625235A237D39F200B298B3 /* YCDrawRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDrawRectView.h; sourceTree = "<group>"; };
+		5625235B237D39F200B298B3 /* YCDrawRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDrawRectView.m; sourceTree = "<group>"; };
+		5625235D237D3A7A00B298B3 /* YCDrawRectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDrawRectVC.h; sourceTree = "<group>"; };
+		5625235E237D3A7A00B298B3 /* YCDrawRectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDrawRectVC.m; sourceTree = "<group>"; };
 		562EBD2D2307EF4D002E32F7 /* UIViewController+YCSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YCSwizzle.h"; sourceTree = "<group>"; };
 		562EBD2E2307EF4D002E32F7 /* UIViewController+YCSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YCSwizzle.m"; sourceTree = "<group>"; };
 		56325169219AA3710091A84C /* YCSchool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YCSchool.xcdatamodel; sourceTree = "<group>"; };
@@ -691,6 +697,7 @@
 		56133EEA2186A2BC00419FE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56252359237D395500B298B3 /* drawRectView */,
 				56252352237D24DB00B298B3 /* BezierPathView */,
 				844A8E0C21AAE36B00FF179A /* Resources */,
 				844A8E0421AAE2D600FF179A /* CCDraggableCard */,
@@ -727,6 +734,8 @@
 				844052AB21F0BE760040B763 /* YCBlockVC.m */,
 				56252356237D255B00B298B3 /* YCBezierPathVC.h */,
 				56252357237D255B00B298B3 /* YCBezierPathVC.m */,
+				5625235D237D3A7A00B298B3 /* YCDrawRectVC.h */,
+				5625235E237D3A7A00B298B3 /* YCDrawRectVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1052,6 +1061,15 @@
 				56252354237D251600B298B3 /* YCBezierPathView.m */,
 			);
 			path = BezierPathView;
+			sourceTree = "<group>";
+		};
+		56252359237D395500B298B3 /* drawRectView */ = {
+			isa = PBXGroup;
+			children = (
+				5625235A237D39F200B298B3 /* YCDrawRectView.h */,
+				5625235B237D39F200B298B3 /* YCDrawRectView.m */,
+			);
+			path = drawRectView;
 			sourceTree = "<group>";
 		};
 		56325163219AA3710091A84C /* school */ = {
@@ -1615,6 +1633,7 @@
 				56133EB12186984E00419FE5 /* AppDelegate.m in Sources */,
 				5646190021A54A5C0066A33B /* YCRunloopVC.m in Sources */,
 				56B89C4121A2627C0043F6EA /* MHPictureMetadata.m in Sources */,
+				5625235F237D3A7A00B298B3 /* YCDrawRectVC.m in Sources */,
 				56133F0A2186A5DB00419FE5 /* YCShopCartVC.m in Sources */,
 				56B89CE021A293DA0043F6EA /* NSDateFormatter+Extension.m in Sources */,
 				56133F072186A59700419FE5 /* YCFindVC.m in Sources */,
@@ -1625,6 +1644,7 @@
 				5614368621883D34002B3594 /* VVeboLabel.m in Sources */,
 				5654E63621928FED00CEBB46 /* YCArraySort.m in Sources */,
 				56B89CAC21A28B920043F6EA /* YYWeakProxy.m in Sources */,
+				5625235C237D39F200B298B3 /* YCDrawRectView.m in Sources */,
 				561436242187EC08002B3594 /* UIScreen+Additions.m in Sources */,
 				56B89C7C21A2636A0043F6EA /* MHEXTRuntimeExtensions.m in Sources */,
 				844A8E0321AA6F6B00FF179A /* YCWaterFlowLayout.m in Sources */,
