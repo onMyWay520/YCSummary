@@ -18,7 +18,9 @@
     [super viewDidLoad];
     self.title=@"coredata演练";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0,64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.sectionFooterHeight=0.001;
+    self.mainView.sectionHeaderHeight=HEIGHT(30);
+    self.mainView.frame=CGRectMake(0,SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT);
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
@@ -41,10 +43,6 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return 1;
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return HEIGHT(30);
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     

@@ -26,7 +26,7 @@
     [super viewDidLoad];
     self.title=@"算法演练";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0,64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.frame=CGRectMake(0,SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT);
     [self showStack];
     // 二叉排序树
     NSArray *binaryTree = @[@7,@2,@1,@4,@6,@8,@9,@34,@21,@23,@12];

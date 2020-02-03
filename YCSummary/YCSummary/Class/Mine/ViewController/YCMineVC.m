@@ -31,7 +31,7 @@
     [super viewDidLoad];
     self.title=@"我的";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0, 64, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.frame=CGRectMake(0, SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT);
     
 //    YCDog *dog=[YCProxy proxyWithObject:[YCDog alloc]];
 //    [dog barking:4];

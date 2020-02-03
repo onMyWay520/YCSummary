@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4FF1534096463405D94DD34CED1A888E"
+               BlueprintIdentifier = "9EB4532BC30972B0684C3F1572C39EE3"
+               BuildableName = "SJStaticTableView.framework"
                BlueprintName = "SJStaticTableView"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SJStaticTableView.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
