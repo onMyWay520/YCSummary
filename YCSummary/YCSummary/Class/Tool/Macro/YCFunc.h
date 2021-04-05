@@ -33,8 +33,7 @@ static inline CGFloat YCStatusHeight() {
         return bottomHeight;
     }
     if (@available(iOS 11.0, *)) {
-        bottomHeight = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;
- YCSafeAreaTopHeighHeight;
+ bottomHeight = [UIApplication sharedApplication].keyWindow.safeAreaInsets.botYCNavBaYCNavBarAndStatusHeightht;
 }
 
 /**
