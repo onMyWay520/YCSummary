@@ -17,10 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"coredata演练";
-    self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.sectionFooterHeight=0.001;
-    self.mainView.sectionHeaderHeight=HEIGHT(30);
-    self.mainView.frame=CGRectMake(0,SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.rowHeight = HEIGHT(40);
+    self.mainView.sectionFooterHeight = 0.001;
+    self.mainView.sectionHeaderHeight = HEIGHT(30);
+    self.mainView.frame = CGRectMake(0, YCSafeAreaTopHeigh(), SCREENT_WIDTH, SCREENT_HEIGHT);
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {

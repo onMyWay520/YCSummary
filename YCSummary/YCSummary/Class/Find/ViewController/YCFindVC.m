@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"发现";
+    self.title = @"发现";
     if (@available(iOS 11.0, *)) {
         self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
@@ -25,13 +25,13 @@
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
+    self.tableView.contentInset = UIEdgeInsetsMake(YCNavBarAndStatusHeight(),0,0,0);
     [self networkRequest];
 
 }
 - (void)networkRequest{
     //模拟网络请求
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
      //请求成功
     NSDictionary *responseDict = @{@"title_info":@"新游戏上架啦",
           @"title_icon":@"game_1",
@@ -71,41 +71,6 @@
 
 }
 - (void)didSelectViewModel:(SJStaticTableviewCellViewModel *)viewModel atIndexPath:(NSIndexPath *)indexPath{
-    
-    switch (viewModel.identifier){
-            
-        case 0:
-        {
-//            MHMomentViewController *vc=[[MHMomentViewController alloc]init];
-//            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        case 8:
-        {
-            NSLog(@"清理缓存");
-        }
-            break;
-            
-        case 9:
-        {
-            NSLog(@"跳转到定制性cell展示页面 - 分组");
-//            SJCustomCellsViewController *vc = [[SJCustomCellsViewController alloc] init];
-//            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        case 10:
-        {
-            NSLog(@"跳转到定制性cell展示页面 - 同组");
-//            SJCustomCellsOneSectionViewController *vc = [[SJCustomCellsOneSectionViewController alloc] init];
-//            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        default:
-            break;
-    }
 }
 
 /*

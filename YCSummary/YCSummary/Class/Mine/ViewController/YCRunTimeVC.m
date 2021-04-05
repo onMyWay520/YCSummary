@@ -22,13 +22,13 @@
     [super viewDidLoad];
     self.title=@"runtime演练";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0, SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT-SafeAreaTopHeight);
+    self.mainView.frame=CGRectMake(0, YCNavBarAndStatusHeight(), SCREENT_WIDTH, SCREENT_HEIGHT - YCNavBarAndStatusHeight());
     [self allocKVO];
     [self yc_addNotificationForName:@"YCNotification" block:^(NSNotification * _Nonnull notification) {
         NSLog(@"接收到通知===%@",notification.userInfo);
     }];
-     YCRunTimeModel *model=[[YCRunTimeModel alloc]init];
-    YCRunTimeModel *model2=[[YCRunTimeModel alloc]init];
+//    YCRunTimeModel *model=[[YCRunTimeModel alloc]init];
+//    YCRunTimeModel *model2=[[YCRunTimeModel alloc]init];
 
 }
 -(NSArray *)dataArray{

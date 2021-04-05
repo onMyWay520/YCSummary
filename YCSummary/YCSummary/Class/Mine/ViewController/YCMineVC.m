@@ -31,8 +31,7 @@
     [super viewDidLoad];
     self.title=@"我的";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0, SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT);
-    
+    self.mainView.frame=CGRectMake(0,YCNavBarAndStatusHeight(), SCREENT_WIDTH, SCREENT_HEIGHT);
 //    YCDog *dog=[YCProxy proxyWithObject:[YCDog alloc]];
 //    [dog barking:4];
     YCDog *dog=[[YCDog alloc]init];
@@ -55,7 +54,7 @@
     if (!cell) {
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellIdentifier"];
     }
-    cell.textLabel.text=self.dataArray[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld - %@",indexPath.row + 1 , self.dataArray[indexPath.row]];
     return cell;
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -71,50 +70,56 @@
     return 0.001;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row==0) {
-        [self.navigationController pushViewController:[YCNounVC new] animated:false];
+    
+    UIViewController *vc;
+    switch (indexPath.row) {
+        case 0:
+            vc = [YCNounVC new];
+            break;
+        case 1:
+            vc = [YCDispatchVC new];
+            break;
+        case 2:
+            vc = [YCOperationVC new];
+            break;
+        case 3:
+            vc = [YCNounVC new];
+            break;
+        case 4:
+            vc = [YCRunTimeVC new];
+            break;
+        case 5:
+            vc = [YCRunloopVC new];
+            break;
+        case 6:
+            vc = [YCWaterflowController new];
+            break;
+        case 7:
+            vc = [YCLikeOrUnlikeVC new];
+            break;
+        case 8:
+            vc = [YCKVOVC new];
+            break;
+        case 9:
+        {
+            YCBlockVC *vc = [YCBlockVC new];
+            vc.myblock2 = ^(NSString * str) {
+                
+                DebugLog(@"str==%@",str);
+            };
+            [self.navigationController pushViewController:vc animated:NO];
+        }
+            break;
+        case 10:
+            vc = [YCBezierPathVC new];
+            break;
+        case 11:
+            vc = [YCDrawRectVC new];
+            break;
+        default:
+            break;
     }
-    else  if (indexPath.row==1) {
-        [self.navigationController pushViewController:[YCDispatchVC new] animated:false];
-    }
-    else  if (indexPath.row==2) {
-        [self.navigationController pushViewController:[YCOperationVC new] animated:false];
-    }
-    else  if (indexPath.row==3) {
-        [self.navigationController pushViewController:[YCCoreDataVC new] animated:false];
-    }
-    else  if (indexPath.row==4) {
-        [self.navigationController pushViewController:[YCRunTimeVC new] animated:false];
-    }
-    else  if (indexPath.row==5) {
-      [self.navigationController pushViewController:[YCRunloopVC new] animated:false];
-        
-    }
-    else if (indexPath.row==6){
-        [self.navigationController pushViewController:[YCWaterflowController new] animated:false];
-    }
-   else if (indexPath.row==7){
-        [self.navigationController pushViewController:[YCLikeOrUnlikeVC new] animated:false];
-   }
-   else if (indexPath.row==8){
-       [self.navigationController pushViewController:[YCKVOVC new] animated:false];
-   }
-  else if (indexPath.row==9){
-       YCBlockVC *vc=[YCBlockVC new];
-       vc.myblock2 = ^(NSString * str) {
-           
-           DebugLog(@"str==%@",str);
-       };
-        [self.navigationController pushViewController:vc animated:false];
-       
-   }
-  else if (indexPath.row==10){
-      [self.navigationController pushViewController: [YCBezierPathVC new] animated:NO];
-  }
-  else{
-      [self.navigationController pushViewController: [YCDrawRectVC new] animated:NO];
-
-  }
+    [self.navigationController pushViewController:vc animated:NO];
     
 }
 /*

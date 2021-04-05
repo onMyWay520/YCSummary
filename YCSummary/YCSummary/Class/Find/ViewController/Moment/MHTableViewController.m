@@ -222,7 +222,7 @@
 
 #pragma mark - sub class can override it
 - (UIEdgeInsets)contentInset{
-    return UIEdgeInsetsMake(SafeAreaTopHeight, 0, 0, 0);
+    return UIEdgeInsetsMake(YCSafeAreaTopHeigh(), 0, 0, 0);
 }
 
 /// reload tableView data

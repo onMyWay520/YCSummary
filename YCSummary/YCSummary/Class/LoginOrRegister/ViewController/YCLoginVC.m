@@ -72,7 +72,6 @@
     if (!_loginBtn) {
         _loginBtn=[UIButton buttonWithType:UIButtonTypeSystem];
         [_loginBtn setTitle:@"登陆" forState:0];
-        _loginBtn.titleLabel.font=FONT(18);
 //        [_loginBtn setTitleColor:WHITECOLOR forState:UIControlStateNormal];
 _loginBtn.frame=CGRectMake(self.accountTF.left, self.passwordTF.bottom+HEIGHT(40), self.accountTF.width, HEIGHT(50));
     

@@ -20,8 +20,7 @@
 }
 -(UITableView *)mainView{
     if (!_mainView){
-        
-        _mainView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0,SCREENT_WIDTH ,SCREENT_HEIGHT-SafeAreaTopHeight) style:UITableViewStyleGrouped];
+        _mainView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0,SCREENT_WIDTH ,SCREENT_HEIGHT - YCSafeAreaTopHeigh()) style:UITableViewStyleGrouped];
         _mainView.dataSource=self;
         _mainView.delegate=self;
         _mainView.estimatedRowHeight = 0;
@@ -55,13 +54,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

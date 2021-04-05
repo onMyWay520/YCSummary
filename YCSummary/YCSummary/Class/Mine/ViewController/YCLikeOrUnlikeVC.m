@@ -30,7 +30,7 @@ CCDraggableContainerDelegate
     // 防止视图变黑
     self.view.backgroundColor = [UIColor whiteColor];
     // 初始化Container
-    self.container = [[CCDraggableContainer alloc] initWithFrame:CGRectMake(0, 64, CCWidth, CCWidth) style:CCDraggableStyleUpOverlay];
+    self.container = [[CCDraggableContainer alloc] initWithFrame:CGRectMake(0, YCNavBarAndStatusHeight(), CCWidth, CCWidth) style:CCDraggableStyleUpOverlay];
     self.container.delegate = self;
     self.container.dataSource = self;
     self.container.backgroundColor = [UIColor colorWithRed:0.792 green:0.918 blue:0.808 alpha:1.00];

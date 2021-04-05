@@ -20,7 +20,8 @@
     [super viewDidLoad];
     self.title=@"Dispatch函数演练";
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0, SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT-SafeAreaTopHeight);
+    self.mainView.frame=CGRectMake(0, YCNavBarAndStatusHeight(), SCREENT_WIDTH, SCREENT_HEIGHT - YCSafeAreaTopHeigh());
+    [self.mainView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellIdentifier"];
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
@@ -49,12 +50,11 @@
     return _dataArray;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cellIdentifier"];
-    if (!cell) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellIdentifier"];
-    }
+    return [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier"];
+}
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     cell.textLabel.text=[NSString stringWithFormat:@"%ld.%@",indexPath.row+1,self.dataArray[indexPath.row]];
-    return cell;
+
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

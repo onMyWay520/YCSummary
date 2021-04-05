@@ -18,7 +18,7 @@
         self.myblock2(@"20");
     }
     self.mainView.rowHeight=HEIGHT(40);
-    self.mainView.frame=CGRectMake(0,SafeAreaTopHeight, SCREENT_WIDTH, SCREENT_HEIGHT);
+    self.mainView.frame=CGRectMake(0,YCNavBarAndStatusHeight(), SCREENT_WIDTH, SCREENT_HEIGHT - YCNavBarAndStatusHeight());
 }
 -(NSArray *)dataArray{
     if (!_dataArray) {
